@@ -1,5 +1,3 @@
-
-ontology = JSON.parse(`
 {
   "_comment" : "Just a test ",
   "header" : {
@@ -19,7 +17,7 @@ ontology = JSON.parse(`
   },
   
   "class" : [
-      { "id" : "author",  "type" : "rdfs:Class" }
+     { "id" : "author",  "type" : "rdfs:Class" }
     ,{ "id" : "work",  "type" : "rdfs:Class" }
     ,{ "id" : "date_of_birth",  "type" : "rdfs:Datatype" }
     ,{ "id" : "pub_date",  "type" : "rdfs:Datatype" }
@@ -30,7 +28,7 @@ ontology = JSON.parse(`
   ],
   
   "classAttribute" : [
-      { "label" : "Author", "id" : "author"}
+     { "label" : "Author", "id" : "author"}
     ,{ "label" : "Work", "id" : "work"}
     ,{ "label" : "Date of Birth", "id" : "date_of_birth"}
     ,{ "label" : "Place", "id" : "place"}
@@ -41,7 +39,7 @@ ontology = JSON.parse(`
   ],
   
   "property" : [
-      { "id" : "was_born_in",  "type" : "owl:datatypeProperty"   }
+     { "id" : "was_born_in",  "type" : "owl:datatypeProperty"   }
     ,{ "id" : "worked_in", "type" : "owl:datatypeProperty"}
     ,{ "id" : "was_published_in_year",  "type" : "owl:datatypeProperty"   }
     ,{ "id" : "was_published_in_place",  "type" : "owl:datatypeProperty"   }    
@@ -62,7 +60,7 @@ ontology = JSON.parse(`
   ],
   
   "propertyAttribute" : [
-      { "id":"was_born_in" , "domain" : "author",  "range" : "date_of_birth", "label": "was born in" }
+     { "id":"was_born_in" , "domain" : "author",  "range" : "date_of_birth", "label": "was born in" }
     ,{ "id":"worked_in" , "domain" : "author",  "range" : "place", "label": "worked in" }
     ,{ "id":"was_published_in_year" , "domain" : "work",  "range" : "pub_date", "label": "was published in the year" }
     ,{ "id":"was_published_in_place" , "domain" : "work",  "range" : "place", "label": "was published in" }
@@ -81,12 +79,4 @@ ontology = JSON.parse(`
     ,{ "id" : "was_a_stundent_of", "domain" : "author", "range" : "author", "label" : "was a student of"}
     ,{ "id" : "inspired", "domain" : "author", "range" : "author", "label" : "inspired"}
   ]
-  }
-  `)
-
-console.log(document.getElementById("existing_nodes"))
-var nodes = document.getElementById("existing_nodes")
-ontology.classAttribute.forEach(element => {
-  console.log(element["label"])
-  nodes.insertAdjacentHTML('afterend', "<li>" + element["label"] + "</li>")
-});
+}

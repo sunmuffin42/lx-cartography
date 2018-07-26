@@ -1,0 +1,13 @@
+body {
+    margin:0;
+    flex: 1;
+    display:flex;
+  }
+
+  main {
+    flex:1;
+    display:grid;
+    grid-template: 
+       "exisiting_nodes domain_node relationship range_node" auto
+    / 1 1 1 1;
+  }
