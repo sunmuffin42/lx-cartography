@@ -6,8 +6,8 @@ dataProp = "owl:datatypeProperty"
 objProp = "owl:objectProperty"
 
 def main():
-	inFile = "C:\\Linguistics\\lx-cartography\\lx-cartography\\lx-cartography\\lx_cartography_sample.json"
-	outFile = "C:\\Linguistics\\lx-cartography\\lx-cartography\\lx-cartography\\lx_cartography_sample2.json"
+	inFile = "C:\\Linguistics\\lx-cartography\\lx-cartography\\lx_cartography_sample.json"
+	outFile = "C:\\Linguistics\\lx-cartography\\lx-cartography\\lx_cartography_sample2.json"
 
 	sample = open(inFile, mode="r", encoding = "utf8")
 	sampleJSON = json.load(sample)
