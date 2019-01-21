@@ -1,0 +1,39 @@
+<form>
+	<fieldset>
+		<legend>Add Entity</legend>
+		<select name = "entityType">
+				<option value = "class">Author</option>
+				<option value = "class">Work</option>
+				<option value = "datatype">Date, location, or other miscellaneous information</option>
+		</select>
+		Entity name:<br>
+		<input type="text" name="firstname"><br>
+		Year of publication (if work; otherwise leave blank):<br>
+		<input type="text" name="pubDate"><br>
+		Entity type:<br>
+		
+		<div class="button">
+			<button type="submit">Submit</button>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>Add Relationship</legend>
+		Entity 1:<br>
+		<select name="domain">
+			{% for entity in classAttribute %}
+				<option value="{{ entity.id }}">{{ entity.label }}</option>
+			{% endfor %}
+		</select>
+		Relationship type:<br>
+		<input type="text" name="relationship"><br>
+		Entity 2:<br>
+		<select>
+			{% for entity in classAttribute %}
+				<option value="{{ entity.id }}">{{ entity.label }}</option>
+			{% endfor %}
+		</select>
+		<div class="button">
+			<button type="submit">Submit</button>
+		</div>
+	</fieldset>
+</form>
