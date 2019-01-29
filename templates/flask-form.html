@@ -1,4 +1,10 @@
-<form>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data entry form</title>
+</head>
+<body>
+<form action="{{ url_for('json_process') }}" method="GET">
 	<fieldset>
 		<legend>Add Entity</legend>
 		<select name = "entityType">
@@ -6,15 +12,36 @@
 				<option value = "class">Work</option>
 				<option value = "datatype">Date, location, or other miscellaneous information</option>
 		</select>
+		<br>
 		Entity name:<br>
 		<input type="text" name="firstname"><br>
 		Year of publication (if work; otherwise leave blank):<br>
 		<input type="text" name="pubDate"><br>
 		Entity type:<br>
 		
-		<div class="button">
+		<div class="entity_button">
 			<button type="submit">Submit</button>
 		</div>
+		<span>
+		<fieldset>
+			<legend>Add year</legend>
+			<input type="text" name="date_date">
+			<br>
+			<div class="date_button">
+				<button type="submit">Submit</button>
+			</div>
+		</fieldset>
+		</span>
+		<span>
+		<fieldset>
+			<legend>Add location</legend>
+			<input type="text" name="location">
+			<br>
+			<div class="location_button">
+				<button type="submit">Submit</button>
+			</div>
+		</fieldset>
+		</span>
 	</fieldset>
 	<fieldset>
 		<legend>Add Relationship</legend>
@@ -24,16 +51,44 @@
 				<option value="{{ entity.id }}">{{ entity.label }}</option>
 			{% endfor %}
 		</select>
+		<br>
 		Relationship type:<br>
-		<input type="text" name="relationship"><br>
+		<input type="text" name="relationship1"><br>
 		Entity 2:<br>
 		<select>
 			{% for entity in classAttribute %}
 				<option value="{{ entity.id }}">{{ entity.label }}</option>
 			{% endfor %}
 		</select>
-		<div class="button">
+		<div class="relationship_button">
+			<button type="submit">Submit</button>
+		</div>
+		<fieldset>
+		<legend>Add Relationship to lesser entity</legend>
+		Entity 1:<br>
+		<select name="domain">
+			{% for attribute in classAttribute if attribute.type=="owl:Class" %}
+				<option value="{{ attribute.id }}">{{ attribute.label }}</option>
+			{% else %}
+				<option>None</option>
+			{% endfor %}
+		</select>
+		<br>
+		Relationship type:<br>
+		<input type="text" name="relationship2"><br>
+		Entity 2:<br>
+		<select name="existing_range">
+			{% for attribute in classAttribute if attribute.type=="rdfs:Datatype" %}
+				<option value="{{ attribute.id }}">{{ attribute.label }}</option>
+			{% endfor %}
+		</select>
+		<div>Or</div>
+		<input type="text" name="manual_entry_range">
+		<div class="relationship_button">
 			<button type="submit">Submit</button>
 		</div>
 	</fieldset>
+	</fieldset>
 </form>
+</body>
+</html>
