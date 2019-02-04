@@ -10,9 +10,6 @@ Please leave drop-downs empty when you hit submit.
 		<legend>Add Entity</legend>
 		<fieldset>
 		<legend>Add major entity</legend>
-		<div>
-			Authors and works
-		</div>
 		<fieldset>
 			<legend>Author</legend>
 			<table>
@@ -25,13 +22,21 @@ Please leave drop-downs empty when you hit submit.
 				</tr>
 				<tr>
 					<td>
-						Input author:<br><br><br>
-						<input type="text" name="author1">
+						<label for="author1">Input author: </label>
+						<input type="text" name="author1" id="author1"><br><br>
+						<label for="date0">Input author year of birth: </label>
+						<input type="text" name="date0" id="date0"><br><br>
+						<label for="iri1">Input URL to Wikipedia page: </label>
+						<input type="text" name="iri1" id="iri1">
 					</td>
 					<td>
 						<ul>
-						{% for i in classAttribute if i.category == "author" %}
-							<li>{{ i.label }}</li>
+						{% for i in classAttribute|sort(attribute='label') if i.category == "author" %}
+							{% if i.iri is defined %}
+								<li><a href="{{ i.iri }}">{{ i.label }}</a></li>
+							{% else %}
+								<li>{{ i.label }}</li>
+							{% endif %}
 						{% endfor %}
 						</ul>
 					</td>
@@ -50,8 +55,18 @@ Please leave drop-downs empty when you hit submit.
 				</tr>
 				<tr>
 					<td>
-						Input work title:<br>
-						<input type="text" name="work"><br><br>
+						<table>
+							<tr>
+								<td width="250px">
+									<label for="work">Input work title:</label><br>
+									<input type="text" name="work">
+								</td>
+								<td>
+									<label for="iri2">Input URL to PDF:</label><br>
+									<input type="text" name="iri2" id="iri2">
+								</td>
+							</tr>	
+						</table>
 						<table>
 							<tr>
 								<td width="250px">
@@ -65,8 +80,8 @@ Please leave drop-downs empty when you hit submit.
 								<td>
 									<select name="author2">
 										<option value=""></option>
-										{% for attribute in classAttribute if attribute.category=="author" %}
-										<option value="{{ attribute.id }}">{{ attribute.label }}</option>
+										{% for attribute_x in classAttribute|sort(attribute='label') if attribute_x.category=="author" %}
+										<option value="{{ attribute_x.id }}">{{ attribute_x.label }}</option>
 										{% endfor %}
 									</select>
 								</td>
@@ -88,8 +103,8 @@ Please leave drop-downs empty when you hit submit.
 								<td>
 									<select name="date1">
 										<option value=""></option>
-										{% for attribute in classAttribute if attribute.category=="date" %}
-										<option value="{{ attribute.id }}">{{ attribute.label }}</option>
+										{% for attribute_x in classAttribute|sort(attribute='label') if attribute_x.category=="date" %}
+										<option value="{{ attribute_x.id }}">{{ attribute_x.label }}</option>
 										{% endfor %}
 									</select>
 								</td>
@@ -101,8 +116,12 @@ Please leave drop-downs empty when you hit submit.
 					</td>
 					<td>
 						<ul>
-						{% for i in classAttribute if i.category == "work" %}
-							<li>{{ i.label }}</li>
+						{% for i in classAttribute|sort(attribute='label') if i.category == "work" %}
+							{% if i.iri is defined %}
+								<li><a href="{{ i.iri }}">{{ i.label }}</a></li>
+							{% else %}
+								<li>{{ i.label }}</li>
+							{% endif %}
 						{% endfor %}
 						</ul>
 					</td>
@@ -111,12 +130,75 @@ Please leave drop-downs empty when you hit submit.
 		</fieldset>
 		<fieldset>
 		<legend>Add minor entity</legend>
-		<select name="minor_type">
-			<option value=""></option>
-			<option value="date">Date</option>
-			<option value="concept">Concept</option>
-		</select>
-		<input type="text" name="minor_entity">
+		<table>
+			<tr>
+				<td width="400px">
+					Input new minor entity (concept, date, place, university)
+				</td>
+				<td width="150px">
+					Existing dates
+				</td>
+				<td width="150px">
+					Existing concepts
+				</td>
+				<td>
+					Existing places
+				</td>
+				<td>
+					Existing universities
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select name="minor_type">
+						<option value=""></option>
+						<option value="date">Date</option>
+						<option value="concept">Concept</option>
+						<option value="place">Place</option>
+						<option value="university">Univeristy</option>
+					</select>
+					<input type="text" name="minor_entity">
+				</td>
+				<td>
+					<ul>
+						{% for i in classAttribute|sort(attribute='label') if i.category == "date" %}
+							<li>{{ i.label }}</li>
+						{% endfor %}
+					</ul>
+				</td>
+				<td>
+					<ul>
+						{% for i in classAttribute|sort(attribute='label') if i.category == "concept" %}
+							<li>{{ i.label }}</li>
+						{% endfor %}
+					</ul>
+				</td>
+				<td>
+					<ul>
+						{% for i in classAttribute|sort(attribute='label') if i.category == "place" %}
+							<li>{{ i.label }}</li>
+						{% endfor %}
+					</ul>
+				</td>
+				<td>
+					<ul>
+						{% for i in classAttribute|sort(attribute='label') if i.category == "university" %}
+							<li>{{ i.label }}</li>
+						{% endfor %}
+					</ul>
+				</td>
+			</tr>
+		</table>
+		</fieldset>
+		<fieldset>
+			<legend>Add link</legend>
+			<select name="link">
+				<option value=""></option>
+				{% for attribute_x in classAttribute|sort(attribute='label') %}
+					<option value="{{ attribute_x.id }}">{{ attribute_x.label }}</option>
+				{% endfor %}
+			</select>
+			<input type="text" name="iri3">
 		</fieldset>
 	<button type="submit">Submit</button>
 	</fieldset>
@@ -127,8 +209,8 @@ Please leave drop-downs empty when you hit submit.
 			Entity 1:<br>
 			<select name="domain1">
 					<option value=""></option>
-				{% for attribute in classAttribute if attribute.type=="owl:Class" %}
-					<option value="{{ attribute.id }}">{{ attribute.label }}</option>
+				{% for attribute_x in classAttribute|sort(attribute='label') if attribute_x.type=="owl:Class" or attribute_x.type=="rdfs:Class" %}
+					<option value="{{ attribute_x.id }}">{{ attribute_x.label }}</option>
 				{% else %}
 				{% endfor %}
 			</select>
@@ -136,8 +218,8 @@ Please leave drop-downs empty when you hit submit.
 			Relationship type:<br>
 			<select name="attribute1">
 					<option value=""></option>
-				{% for attribute in majorAttributes %}
-					<option value="{{ attribute.id }}">{{ attribute.label }}</option>
+				{% for attribute_x in majorAttributes|sort(attribute='label') %}
+					<option value="{{ attribute_x.id }}">{{ attribute_x.label }}</option>
 				{% else %}
 					<option>None</option>
 				{% endfor %}
@@ -145,8 +227,8 @@ Please leave drop-downs empty when you hit submit.
 			Entity 2:<br>
 			<select name="range1">
 					<option value=""></option>
-				{% for attribute in classAttribute if attribute.type=="owl:Class" %}
-					<option value="{{ attribute.id }}">{{ attribute.label }}</option>
+				{% for attribute_x in classAttribute|sort(attribute='label') if attribute_x.type=="owl:Class" or attribute_x.type=="rdfs:Class" %}
+					<option value="{{ attribute_x.id }}">{{ attribute_x.label }}</option>
 				{% endfor %}
 			</select>
 		</fieldset>
@@ -156,8 +238,8 @@ Please leave drop-downs empty when you hit submit.
 			Entity 1:<br>
 			<select name="domain2">
 					<option value=""></option>
-				{% for attribute in classAttribute if attribute.type=="owl:Class" %}
-					<option value="{{ attribute.id }}">{{ attribute.label }}</option>
+				{% for attribute_x in classAttribute|sort(attribute='label') if attribute_x.type=="owl:Class" or attribute_x.type=="rdfs:Class" %}
+					<option value="{{ attribute_x.id }}">{{ attribute_x.label }}</option>
 				{% else %}
 					<option>None</option>
 				{% endfor %}
@@ -166,19 +248,27 @@ Please leave drop-downs empty when you hit submit.
 			Relationship type:<br>
 			<select name="attribute2">
 					<option value=""></option>
-				{% for attribute in minorAttributes %}
-					<option value="{{ attribute.id }}">{{ attribute.label }}</option>
+				{% for attribute_x in minorAttributes|sort(attribute='label') %}
+					<option value="{{ attribute_x.id }}">{{ attribute_x.label }}</option>
 				{% else %}
 					<option>None</option>
 				{% endfor %}
 			</select><br>
-			Entity 2:<br>
-			<select name="range2">
+			<span style="display:inline-block; width: 275px;">Entity 2: </span> Or input new minor node <br>
+			<span style="display:inline-block; width: 275px;"><select name="range2">
 					<option value=""></option>
-				{% for attribute in classAttribute if attribute.type=="rdfs:Datatype" %}
-					<option value="{{ attribute.id }}">{{ attribute.label }}</option>
+				{% for attribute_x in classAttribute|sort(attribute='label') if attribute_x.type=="rdfs:datatype" %}
+					<option value="{{ attribute_x.id }}">{{ attribute_x.label }}</option>
 				{% endfor %}
-			</select>
+			</select></span>
+			<select name="range3_type">
+						<option value=""></option>
+						<option value="date">Date</option>
+						<option value="concept">Concept</option>
+						<option value="place">Place</option>						
+						<option value="university">Univeristy</option>
+					</select>
+					<input type="text" name="range3">
 		</fieldset>
 		<button type="submit">Submit</button>
 	</fieldset>

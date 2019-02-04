@@ -1,0 +1,189 @@
+ {
+      "id": "was_born_chomsky",
+      "type": "owl:DatatypeProperty",
+      "domain": "noam_chomsky",
+      "range": "1928",
+      "label": "was born in"
+    },
+    {
+      "id": "dob_bloomfield",
+      "type": "owl:DatatypeProperty",
+      "domain": "bloomfield",
+      "range": "bloomfield_dob",
+      "label": "was born in"
+    },
+    {
+      "id": "wrote_chomsky_1957",
+      "type": "owl:objectProperty",
+      "domain": "chomsky",
+      "range": "syntactic_structures",
+      "label": "wrote"
+    },
+    {
+      "id": "wrote_bloomfield_1926",
+      "type": "owl:objectProperty",
+      "domain": "bloomfield",
+      "range": "set_of_postulates_for_the_science_of_language",
+      "label": "wrote"
+    },
+    {
+      "id": "publication_date_chomsky_1957",
+      "type": "owl:DatatypeProperty",
+      "domain": "syntactic_structures",
+      "range": "pub_date_syntactic_structures",
+      "label": "was published in the year"
+    },
+    {
+      "id": "publication_date_bloomfield_1926",
+      "type": "owl:DatatypeProperty",
+      "domain": "set_of_postulates_for_the_science_of_language",
+      "range": "pub_date_set_of_postulates_for_the_science_of_language",
+      "label": "was published in"
+    },
+    {
+      "id": "opposed_syntactic_structures_set_of_postulates_for_the_science_of_language",
+      "type": "owl:ObjectProperty",
+      "domain": "syntactic_structures",
+      "range": "set_of_postulates_for_the_science_of_language",
+      "label": "opposed"
+    },
+    {
+      "id": "described_followed_was_daksiputra_panini_traditional_grammarian",
+      "type": "owl:ObjectProperty",
+      "domain": "daksiputra_panini",
+      "range": "traditional_grammarians",
+      "label": "described and/or followed and/or was a"
+    },
+    {
+      "id": "wrote_franz_boas_handbook_of_american_indian_languages",
+      "type": "owl:ObjectProperty",
+      "domain": "franz_boas",
+      "range": "handbook_of_american_indian_languages",
+      "label": "wrote"
+    },
+    {
+      "id": "discussed_franz_boas_describing_linguistic_structure",
+      "type": "owl:DatatypeProperty",
+      "domain": "franz_boas",
+      "range": "describing_linguistic_structure",
+      "label": "discussed"
+    },
+    {
+      "id": "discussed_daksiputra_panini_describing_linguistic_structure",
+      "type": "owl:DatatypeProperty",
+      "domain": "panini",
+      "range": "describing_linguistic_structure",
+      "label": "discussed"
+    },
+    {
+      "id": "inspired_daksiputra_panini_aspects_of_the_theory_of_syntax",
+      "type": "owl:objectProperty",
+      "domain": "panini",
+      "range": "aspects_of_the_theory_of_syntax",
+      "label": "inspired"
+    },
+    {
+      "id": "inspired_daksiputra_panini_leonard_bloomfield",
+      "type": "owl:objectProperty",
+      "domain": "daksiputra_panini",
+      "range": "leonard_bloomfield",
+      "label": "inspired"
+    },
+    {
+      "id": "wrote_ferdinand_de_saussure_course_de_linguistique_general",
+      "type": "owl:objectProperty",
+      "domain": "ferdinand_de_saussure",
+      "range": "course_de_linguistique_general",
+      "label": "wrote"
+    },
+    {
+      "id": "discussed_course_de_linguistique_general_arbitrariness_of_the_linguistic_sign",
+      "type": "owl:DatatypeProperty",
+      "domain": "course_de_linguistique_general",
+      "range": "arbitrariness_of_the_linguistic_sign",
+      "label": "discussed"
+    },
+    {
+      "id": "discussed_ferdinand_de_saussure_proto_indo_european",
+      "type": "owl:DatatypeProperty",
+      "domain": "ferdinand_de_saussure",
+      "range": "proto_indo_european",
+      "label": "discussed"
+    },
+    {
+      "id": "inspired_panini_saussure",
+      "type": "owl:ObjectProperty",
+      "domain": "daksiputra_panini",
+      "range": "ferdinand_de_saussure",
+      "label": "inspired"
+    },
+    {
+      "id": "birth_date_ferdinand_de_saussure_1857",
+      "type": "owl:DatatypeProperty",
+      "domain": "saussure",
+      "range": "1857",
+      "label": "was born in"
+    },
+    {
+      "id": "wrote_chomsky_aspects_of_the_theory_of_syntax",
+      "type": "owl:objectProperty",
+      "domain": "noam_chomsky",
+      "range": "aspects_of_the_theory_of_syntax",
+      "label": "wrote"
+    },
+    {
+      "id": "discussed_traditional_grammarians_proto_indo_european",
+      "type": "owl:datatypeProperty",
+      "domain": "traditional_grammarians",
+      "range": "proto_indo_european",
+      "label": "discussed"
+    },
+    {
+      "id": "discussed_noam_chomsky_universal_grammar",
+      "type": "owl:datatypeProperty",
+      "domain": "noam_chomsky",
+      "range": "universal_grammar",
+      "label": "discussed"
+    },
+    {
+      "id": "wrote_daniel_everett_cultural_constraints_on_grammar_and_cognition_in_piraha",
+      "type": "owl:objectProperty",
+      "domain": "daniel_everett",
+      "range": "cultural_constraints_on_grammar_and_cognition_in_piraha",
+      "label": "wrote"
+    },
+    {
+      "id": "pub_date_cultural_constraints_on_grammar_and_cognition_in_piraha_2005",
+      "type": "owl:datatypeProperty",
+      "domain": "cultural_constraints_on_grammar_and_cognition_in_piraha",
+      "range": "2005",
+      "label": "was published in the year"
+    },
+    {
+      "id": "opposed_cultural_constraints_on_grammar_and_cognition_in_piraha_universal_grammar",
+      "type": "owl:datatypeProperty",
+      "domain": "cultural_constraints_on_grammar_and_cognition_in_piraha",
+      "range": "universal_grammar",
+      "label": "went against"
+    },
+    {
+      "id": "wrote_nick_evans_2009",
+      "type": "owl:objectProperty",
+      "domain": "nick_evans",
+      "range": "dying_words",
+      "label": "wrote"
+    },
+    {
+      "id": "pub_date_nick_evans_2009",
+      "type": "owl:objectProperty",
+      "domain": "dying_words",
+      "range": "2009",
+      "label": "was published in the year"
+    },
+    {
+      "id": "described_followednick_evansdescribing_linguistic_structure",
+      "type": "owl:datatypeProperty",
+      "domain": "nick_evans",
+      "range": "describing_linguistic_structure",
+      "label": "described and/or followed"
+    }

@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"data",
+				"dataProp"
+			],
+			[
+				"ob",
+				"objectProperty"
+			],
+			[
+				"add",
+				"addItem"
+			],
+			[
+				"cour",
+				"course_de_linguistique_general"
+			],
+			[
+				"pro",
+				"proto_indo_european"
+			],
+			[
 				"myjs",
 				"myjson"
 			],
@@ -80,9 +100,14 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Sunny/Documents/GitHub/lx-cartography/lx_cart_flask.py",
+		"/C/Users/Sunny/Documents/GitHub/lx-cartography/.gitignore",
 		"/C/Users/Sunny/Documents/GitHub/lx-cartography/templates/flask-form.html",
+		"/C/Users/Sunny/Documents/GitHub/lx-cartography/lx_cart_flask.py",
 		"/C/Users/Sunny/Documents/GitHub/lx-cartography/myjson3.json",
+		"/C/Users/Sunny/Documents/GitHub/lx-cartography/myjson4.json",
+		"/C/Users/Sunny/Documents/GitHub/lx-cartography/myjson2.json",
+		"/C/Users/Sunny/Documents/Foot in the Door/HHGTTG_Cast_List.txt",
+		"/C/Users/Sunny/Documents/Sp2019/data_contemp_soc/data_in_soc.txt",
 		"/C/Users/Sunny/Documents/GitHub/lx-cartography/add_to_rdf.py",
 		"/C/Users/Sunny/Documents/Sp2019/data_analytics/data_analytics_notes.txt",
 		"/C/Users/Sunny/Documents/GitHub/lx-cartography/templates/flask-form2.html",
@@ -94,11 +119,8 @@
 		"/C/code/2-6.txt",
 		"/C/Users/Sunny/Documents/Sp2019/synsem2/syn_sem.txt",
 		"/C/Users/Sunny/Documents/GitHub/lx-cartography/myjson.json",
-		"/C/Users/Sunny/Documents/Sp2019/data_contemp_soc/data_in_soc.txt",
 		"/C/Users/Sunny/Documents/Sp2019/syn_sem.txt",
-		"/C/Users/Sunny/Documents/GitHub/lx-cartography/.gitignore",
 		"/C/Users/Sunny/Documents/Sp2019/machine_learning_notes.txt",
-		"/C/Users/Sunny/Documents/GitHub/lx-cartography/myjson2.json",
 		"/C/Users/Sunny/Documents/GitHub/lx-cartography/lx_cartography_sample.json",
 		"/C/Users/Sunny/Documents/GitHub/lx-cartography/json_fuckery.py",
 		"/C/Users/Sunny/Documents/GitHub/lx-cartography/templates/webvowl.html",
@@ -190,6 +212,45 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"1941",
+			"finland",
+			"born",
+			"wrote\"",
+			"wrote_",
+			"wrote",
+			"1923",
+			"1926",
+			"1957",
+			"Chicago",
+			"studied_",
+			"taught",
+			"value=\"un",
+			"work",
+			"if",
+			"endif",
+			"Concept",
+			"concept",
+			"date",
+			"new",
+			"work",
+			"attribute",
+			"was_bor",
+			",\\s+\\}",
+			"franz",
+			"describing_linguistic_structure",
+			"course__",
+			"iri",
+			"verett",
+			"iri",
+			"set_of_po",
+			"iri",
+			"Bloomfield",
+			"Chomsky",
+			"iri",
+			"Grammarians",
+			"traditio",
+			"traditional",
+			"syntactic",
 			"date",
 			"author1",
 			"[A-Z]+, [A-Z]",
@@ -237,6 +298,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			"wrote_edited_",
 			"\\n",
 			"\\1",
 			"inFile",
@@ -295,7 +357,7 @@
 	"project": "views.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
