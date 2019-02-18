@@ -215,6 +215,18 @@
 			"type": "rdfs:datatype",
 			"label": "Southern Illinois University Carbondale",
 			"category": "university"
+		},
+		{
+			"id": "daniel_everett",
+			"type": "owl:Class",
+			"label": "Daniel Everett",
+			"category": "author"
+		},
+		{
+			"id": "1951",
+			"type": "rdfs:datatype",
+			"label": "1951",
+			"category": "date"
 		}
 	],
 	"classAttribute": [
@@ -409,6 +421,18 @@
 			"id": "southern_illinois_university_carbondale",
 			"type": "rdfs:datatype",
 			"category": "university"
+		},
+		{
+			"label": "Daniel Everett",
+			"id": "daniel_everett",
+			"type": "owl:Class",
+			"category": "author"
+		},
+		{
+			"label": "1951",
+			"id": "1951",
+			"type": "rdfs:datatype",
+			"category": "date"
 		}
 	],
 	"property": [
@@ -635,6 +659,27 @@
 			"domain": "glen_gilbert",
 			"range": "southern_illinois_university_carbondale",
 			"label": "taught/worked at"
+		},
+		{
+			"id": "birth_date_daniel_everett_1951",
+			"type": "owl:datatypeProperty",
+			"domain": "daniel_everett",
+			"range": "1951",
+			"label": "was born in the year"
+		},
+		{
+			"id": "inspired_noam_chomsky_daniel_everett",
+			"type": "owl:objectProperty",
+			"domain": "noam_chomsky",
+			"range": "daniel_everett",
+			"label": "inspired"
+		},
+		{
+			"id": "opposed_daniel_everett_noam_chomsky",
+			"type": "owl:objectProperty",
+			"domain": "daniel_everett",
+			"range": "noam_chomsky",
+			"label": "opposed"
 		}
 	],
 	"propertyAttribute": [
@@ -861,6 +906,27 @@
 			"domain": "glen_gilbert",
 			"range": "southern_illinois_university_carbondale",
 			"label": "taught/worked at"
+		},
+		{
+			"id": "birth_date_daniel_everett_1951",
+			"type": "owl:datatypeProperty",
+			"domain": "daniel_everett",
+			"range": "1951",
+			"label": "was born in the year"
+		},
+		{
+			"id": "inspired_noam_chomsky_daniel_everett",
+			"type": "owl:objectProperty",
+			"domain": "noam_chomsky",
+			"range": "daniel_everett",
+			"label": "inspired"
+		},
+		{
+			"id": "opposed_daniel_everett_noam_chomsky",
+			"type": "owl:objectProperty",
+			"domain": "daniel_everett",
+			"range": "noam_chomsky",
+			"label": "opposed"
 		}
 	],
 	"description": "Welcome to Linguistic Cartography!"

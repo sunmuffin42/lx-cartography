@@ -17,38 +17,34 @@
   },
   
   "class" : [
-     { "id" : "author",  "type" : "rdfs:Class" }
-    ,{ "id" : "work",  "type" : "rdfs:Class" }
-    ,{ "id" : "date_of_birth",  "type" : "rdfs:Datatype" }
-    ,{ "id" : "pub_date",  "type" : "rdfs:Datatype" }
-    ,{ "id" : "camp_theory", "type" : "rdfs:Class"}
-    ,{ "id" : "slogan", "type" : "rdfs:Datatype"}
-    ,{ "id" : "place", "type" : "rdfs:Datatype"}
-    ,{ "id" : "subject", "type" : "rdfs:Datatype"}
+     { "id" : "author",  "type" : "owl:Class", "label": "Author" }
+    ,{ "id" : "work",  "type" : "rdfs:Class", "label":"Work" }
+    ,{ "id" : "date_of_birth",  "type" : "rdfs:Datatype", "label": "Date of Birth" }
+    ,{ "id" : "pub_date",  "type" : "rdfs:Datatype", "label": "Publication Date" }
+    ,{ "id" : "place", "type" : "rdfs:Datatype", "label": "Place"}
+    ,{ "id" : "concept", "type" : "rdfs:Datatype", "Concept"}
+    ,{ "id" : "university", "type" : "rdfs:Datatype", "University"}
   ],
   
   "classAttribute" : [
-     { "label" : "Author", "id" : "author"}
-    ,{ "label" : "Work", "id" : "work"}
-    ,{ "label" : "Date of Birth", "id" : "date_of_birth"}
-    ,{ "label" : "Place", "id" : "place"}
-    ,{ "label" : "Publication Date", "id" : "pub_date" }
-    ,{ "label" : "Camp/Theory", "id" : "camp_theory"}
-    ,{ "label" : "In a nutshell", "id" : "slogan"}
-    ,{ "label" : "Subject", "id" : "subject"}
+     { "id" : "author",  "type" : "owl:Class", "label": "Author" }
+    ,{ "id" : "work",  "type" : "rdfs:Class", "label":"Work" }
+    ,{ "id" : "date_of_birth",  "type" : "rdfs:Datatype", "label": "Date of Birth" }
+    ,{ "id" : "pub_date",  "type" : "rdfs:Datatype", "label": "Publication Date" }
+    ,{ "id" : "place", "type" : "rdfs:Datatype", "label": "Place"}
+    ,{ "id" : "concept", "type" : "rdfs:Datatype", "Concept"}
+    ,{ "id" : "university", "type" : "rdfs:Datatype", "University"}
   ],
   
   "property" : [
-     { "id" : "was_born_in",  "type" : "owl:datatypeProperty"   }
-    ,{ "id" : "worked_in", "type" : "owl:datatypeProperty"}
-    ,{ "id" : "was_published_in_year",  "type" : "owl:datatypeProperty"   }
-    ,{ "id" : "was_published_in_place",  "type" : "owl:datatypeProperty"   }    
+     { "id" : "birth_date_",  "type" : "owl:datatypeProperty", "label": "was born in the year"  }
+    ,{ "id" : "taught_worked_at_", "type" : "owl:datatypeProperty", "label": "taught/worked at"}
+    ,{ "id" : "pub_date_",  "type" : "owl:datatypeProperty", "label":"was published in the year"  }
     ,{ "id" : "author_falls_under",  "type" : "owl:objectProperty"   }
-    ,{ "id" : "work_falls_under",  "type" : "owl:objectProperty"   }
-    ,{ "id" : "wrote",  "type" : "owl:objectProperty"   }
-    ,{ "id" : "summarized_by", "type" : "owl:datatypeProperty"}
-    ,{ "id" : "built_on", "type" : "owl:objectProperty"}
-    ,{ "id" : "went_against",  "type" : "owl:ObjectProperty" }
+    ,{ "id" : "described_followed_was_",  "type" : "owl:objectProperty", "label":"described/followed/was a"  }
+    ,{ "id" : "wrote_edited_",  "type" : "owl:objectProperty", "label": "wroted/edited"  }
+    ,{ "id" : "inspired_", "type" : "owl:objectProperty", "label": "inspired"}
+    ,{ "id" : "opposed_",  "type" : "owl:ObjectProperty", "label":"opposed" }
     ,{ "id" : "introduced_author", "type" : "owl:datatypeProperty"}
     ,{ "id" : "popularized_author", "type" : "owl:datatypeProperty"}
     ,{ "id" : "discussed_author", "type" : "owl:datatypeProperty"}
