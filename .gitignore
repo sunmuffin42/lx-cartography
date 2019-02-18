@@ -1,9 +1,9 @@
-# css/
-# js/
-# data/
+css/
+js/
+data/
 
-# *.ico
-# index.html
-# license.txt
-# gilbert_interview/*pdf
-# gilbert_interview/*docx
+*.ico
+index.html
+license.txt
+gilbert_interview/*pdf
+gilbert_interview/*docx
