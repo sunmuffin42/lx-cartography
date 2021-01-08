@@ -1,0 +1,2135 @@
+[
+    {
+        "@id": "_:b0",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#minCardinality": [
+            {
+                "@value": "2",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#hasProperPart"
+            }
+        ]
+    },
+    {
+        "@id": "_:b1",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#hasProperPart"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ]
+    },
+    {
+        "@id": "_:b10",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isDefinedIn"
+            }
+        ]
+    },
+    {
+        "@id": "_:b11",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#cardinality": [
+            {
+                "@value": "1",
+                "@type": "http://www.w3.org/2001/XMLSchema#int"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isDefinedIn"
+            }
+        ]
+    },
+    {
+        "@id": "_:b12",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isDescribedIn"
+            }
+        ]
+    },
+    {
+        "@id": "_:b13",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#hasSetting"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation"
+            }
+        ]
+    },
+    {
+        "@id": "_:b14",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isClassifiedBy"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ]
+    },
+    {
+        "@id": "_:b15",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            }
+        ],
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+            {
+                "@id": "_:b16"
+            }
+        ]
+    },
+    {
+        "@id": "_:b16",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#NonSchematicEntity"
+            }
+        ],
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+            {
+                "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+            }
+        ]
+    },
+    {
+        "@id": "_:b2",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isExpressedBy"
+            }
+        ]
+    },
+    {
+        "@id": "_:b3",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isConceptualizedBy"
+            }
+        ]
+    },
+    {
+        "@id": "_:b4",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isUnifiedBy"
+            }
+        ]
+    },
+    {
+        "@id": "_:b5",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isCoveredBy"
+            }
+        ]
+    },
+    {
+        "@id": "_:b6",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isActedBy"
+            }
+        ]
+    },
+    {
+        "@id": "_:b7",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isIntroducedBy"
+            }
+        ]
+    },
+    {
+        "@id": "_:b8",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2002/07/owl#unionOf": [
+            {
+                "@id": "_:b15"
+            }
+        ]
+    },
+    {
+        "@id": "_:b9",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#satisfies"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Ontology"
+        ],
+        "http://www.w3.org/2002/07/owl#versionInfo": [
+            {
+                "@value": "Created by Aldo Gangemi\nVersion 1.1 aligns cDnS with the axiomatization in the article JAAMAS 2008."
+            },
+            {
+                "@value": "1.1"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Bundle",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Bundle",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "_:b0"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            },
+            {
+                "@id": "_:b1"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "A bundle is a (mereological) sum of (at least two) descriptions that are either all satisfied by a situation, or all define concepts that characterize a same collection.\nFor example, a strategy comprising several plans and decision criteria is a bundle."
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            },
+            {
+                "@id": "_:b4"
+            },
+            {
+                "@id": "_:b5"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#disjointWith": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Collection",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Collections are naturalizations in space-time of proper classes with (at least one) basic properties for membership. This seems to capture the common sense intuition underlying groups, teams, collections, collectives, associations, etc.\nCollection are related to other entities in c.DnS by means of the following projections: unifiedBy (holding between a descriptions and a collections); coveredBy, characterizedBy (holding between concepts and collections); hasMember (holding between entities and collections)."
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2002/07/owl#disjointWith": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "_:b10"
+            },
+            {
+                "@id": "_:b11"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Concepts are defined by a unique Description and can be used in other descriptions. \nConcepts are related to other entities in c.DnS by means of the following \nprojections: classifies (holding between concepts and entities); covers, characterizes (holding between concepts and collections)."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Concept",
+                "@language": "en"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Configuration",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Configuration",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "When unification is applied to the parts of an entity, so that the unifying description defines concepts that classify those parts, the collection is called configuration. The axioms for configurations cannot be represented in OWL1.0.\nFor example, the collection of all parts of a car, when the unifying description is a functional design description, is a configuration."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2002/07/owl#disjointWith": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "_:b2"
+            },
+            {
+                "@id": "_:b3"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Descriptions are entities that represent a conceptualization. They are dependent on some cdns:SocialAgent and are communicable in principle. \nExamples of descriptions include regulations, plans, laws, diagnoses, projects, narratives, techniques, etc. \nDescriptions have typical components, called cdns:Concept(s), and are related to other entities in c.DnS by means of the following projections: cdns:defines (which hold between descriptions and concepts); cdns:describes, ground:isIndividuallyConstructedAs (compositions of relations, holding between descriptions and entities); cdns:unifies (holding between descriptions and collections)."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Description",
+                "@language": "en"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2002/07/owl#equivalentClass": [
+            {
+                "@id": "_:b8"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Entities are anything that is assumed to exist in some domain of interest, for any possible world. \nMain subtypes of entities are schematic, and non-schematic. The first one is the focus of this ontology.\nThe entities that are 'described' (see property describes) are called GroundEntity(s), and can be either schematic or not, inherited from other ontologies or not."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Entity",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://www.w3.org/2002/07/owl#Thing"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#GroundEntity",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2002/07/owl#equivalentClass": [
+            {
+                "@id": "_:b12"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Ground entity",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            },
+            {
+                "@id": "_:b13"
+            },
+            {
+                "@id": "_:b14"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The entities that are 'described' (see describes) are called ground entities, and can be either schematic or not, inherited from other ontologies or not.\nA ground entity is supposed to receive a unity criterion through its describes axioms; for example, an old cradle used as a flower pot receives a functional unity criterion through the Description 'old cradles can be used as containers in a furniture'."
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2002/07/owl#disjointWith": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Information Objects are naturalized units of information that can have a history and evolve, just like other social entities. Examples include texts, images, sounds, independently from how they are realized on a physical support.\nInformation objects are related to other entities in c.DnS by means of the following projections: expresses (between information objects and descriptions), about (between information objects and entities), and realizedBy (between information objects and physical entities)."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Information object",
+                "@language": "en"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#NonSchematicEntity",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2002/07/owl#disjointWith": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Any entity that is not schematic, i.e. purely constructed by cognitive or social systems."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Non-schematic entity",
+                "@language": "en"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2002/07/owl#disjointWith": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#NonSchematicEntity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Schematic entity",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The entities that are axiomatized in cDnS.\nThey are proposed as primitives for a constructive ontology of social reality, and have counterparts as reifications of model-theoretical primitives, as well as representations of cognitive schematic principles."
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "_:b9"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Situations are entities that represent a relational context, under the assumption that its components carve up a view (a setting) on the domain of an ontology by virtue of a description. \nExamples of situations (corresponding to the examples of descriptions, see Description) are: facts, plan executions, legal cases, diagnostic cases, attempted projects, performances, technical actions, etc. \nSituations are related to other entities in c.DnS by means of the following projections: settingFor (holding between situations and entities); satisfies (holding between situations and descriptions); hasInScope (holding between situations)."
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#disjointWith": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Situation",
+                "@language": "en"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2002/07/owl#disjointWith": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "_:b6"
+            },
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            },
+            {
+                "@id": "_:b7"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Social agents are individuals that have been created as social entities, and are assumed to 'share descriptions (=to be able to build relational contexts) of other entities, as members of some 'knowledge collective'.\nIn other words, agents in c.DnS are members of some community that shares some knowledge, and as such, they are able to 'carve up' the world into contexts. \nSocial agents are also required to be 'acted by' some physical entity, and such entities can be called 'physical agents' (see ontology ground.owl). Common sense agents are actually either social individuals (companies, organizations, institutions, governments), or physical individuals that can take roles for those social individuals.\nNotice that this notion of agent excludes purely causal agents like avalanches, stones, bullets, viruses, etc., because those do not act for socially-constructed agents, but are simply participants to events according to laws of nature, and with no ability to 'share' (=self-represent, build) knowledge.\nNotice also that the notion of (computational) agent in AI is operational, i.e. it depends on the operations that are allowed to a computational entity, and therefore is more alike to artifacts than to social agents.\n\nSocial agents include persons and organizations, but never a bio-physical system that plays an agentive role (these are represented as non-schematic entities, see http://www.loa-cnr/ontologies/ground.owl).\nSocial agents are related to other entities in c.DnS by means of the following projections: shares (holding between social agents and descriptions); redescribes (holding between social agents and situations); deputes (holding between social agents and concepts); exemplifies (holding between social agents)."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Social agent",
+                "@language": "en"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#actsFor",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The actsFor relation holds for entities and social agents. It formalizes the intuition of acting for a social agent, i.e. the mapping of entities as actors that are classified by concepts that are deputed by a social agent (such a rule cannot be encoded in OWL1.0). It is temporalized in FOL (not in OWL1.0 for missing expressivity).\nFor example, actsFor(Napolitano, ItalianState, 2007)."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "acts for",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isActedBy"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#assumes",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Assumes is here proposed as a more specific way of sharing a description. For a full definition of assumption we should axiomatize the relation between assumptions of descriptions, and beliefs about situations: while sharing a description is certainly required to an agent in order to believe a situation that satisfies that description, it is not sufficient to conclude that sharing is sufficient to that agent to actually believe it. \nThe issue is even subtler, because we cannot either conclude that assuming that description is sufficient to believe that situation, since there can be additional constraints that make a situation unbelievable. Conversely, there can be cases in which a situation is believed without assuming the description it satisfies. We do not attempt an axiomatization of these epistemological issues here. \nFor example:\nassumes(Stahl, FlogistonTheory)\nassumes(Lavoisier, OxygenTheory)"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "assumes",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isAssumedBy"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#conceptualizes"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#characterizes",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "characterizes",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isCharacterizedBy"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Many collections can have subcollections covered by different concepts. In that case, we say that those concepts characterize the collection. Since subcollections can change without affecting the identity of a collection, characterizes is temporalized (time indexing cannot be encoded in OWL1.0)."
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#classifies",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "classifies",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The classif ies relation is the projection of c.DnS maximal relation over concepts and entities at a certain time. \nIt formalizes the intuition of redescribing an entity, i.e. when a (new) cognitive context is applied to something that already has an identity in actually occurring situations in the life of a cognitive agent. \nFor example, the following statement has the consequence that the social agent Napolitano is provided with the additional identity of ItalianPresidentRole for 2007:\n \nclassifies(ItalianPresidentRole, Napolitano, 2007)\n\nTime variables cannot be expressed in OWL (only binary relations are available); for time indexing, see the ontology: ground.owl."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isClassifiedBy"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#conceptualizes",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The conceptualizes relation is the projection of c.DnS over social agents and schematic entities. \nIt formalizes the intuition of the social nature of a description, i.e. the mapping of descriptions on social agents that are acted by one or more physical agents. \nNote that by social nature we do not mean that a description should actually be shared by a community (although this is typically what happens), but that a description must be communicable among social agents. For example: \nshares(Napolitano, LawForGovernmentFormation, 2006)"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isConceptualizedBy"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "conceptualizes",
+                "@language": "en"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#covers",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "covers",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The concept(s) that classify all the members of a collection are said to cover a collection.\nthe following statement is about the fact that the collective ItalianMinisterCouncil has all members that are classified by the concept Minister: covers(Minister, ItalianMinisterCouncil)"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isCoveredBy"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#defines",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "defines",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The defines relation is the projection of c.DnS over descriptions and concepts.\nDefines formalizes the intuition of a gestalt, or cognitive context, that gives meaning to the parts of a perceived situation. Some examples are modelled here: \ndefines(ItalianConstitution, Minister)\ndefines(LinneanTaxonomy, Species)\ndefines(CNRRegulation, SeniorResearcher)"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isDefinedIn"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#deputes",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Social agents can depute concepts (e.g. roles) that are supposed to enact the actions of a social agent.\nFor example, a telecom company can depute the role engineer that can classify certain entities (typically, persons with appropriate curricula) to act for the company. This is a legal example: \ndeputes(ItalianState, ItalianPresident, 2006)"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "deputes",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isDeputedBy"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#describes",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "describes",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Compositional projections can be defined from primitive ones. The projection 'describes' is compositionally defined, and states that a Description describes an Entity when the latter isClassifiedBy a Concept that isDefinedIn the Description"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isDescribedIn"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#expresses",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "expresses",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isExpressedBy"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The expresses relation is the projection of c.DnS over information objects and schematic entities at a time. It formalizes the intuition that every description is communicable in principle. For example: \nexpresses(ItalianConstitutionText, ItalianConstitution, 1946)"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#hasInScope",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "has in scope",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The hasInScope relation reflects the intuition that situations can be epistemologically layered when a description d1 describes another description d2. When this happens, any situation s1 that satisfies d1 'has in its scope' another situation s2 that satisfies d2. A theorem is that s1 is a setting for d2. For example:\n\nhasInScope(MurderCase_1, CaesarStabbedByBrutus)\n\nmeans that a certain murder case (a murder situation under a certain normative description) has in scope the social fact (an aggression situation under a social description) of Caesar being stabbed by Brutus. This assertion is the consequence that a normative description has been applied to a social fact, involving its social description (e.g. a witness report), which becomes an element in the setting of the murder case.\nNotice that we cannot also claim that Caesar being stabbed by Brutus is on its turn in the setting of the murder case, because the case is precisely about evaluating that reported fact, not about assuming it."
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isInScopeOf"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#hasMember",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "has member",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The entities that are classified by a same concept or a same set of concepts, either defined by the same description or not, are easier \nto compare, and can be put in a same collection. The memberOf \nrelation holds between collections and entities.\nThe following example:\n\n(memberOf(D'Alema, ItalianGovernmentCollective, 2007)\n\nasserts that D'Alema is a member of the Italian Government collective \nin 2007. Italian Government collective is intended here as the collection of all members from a particular Italian government. \nNote that ItalianGovernmentCollective is not the same entity as ItalianGovernment, which is a social agent."
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isMemberOf"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#hasProperPart",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#TransitiveProperty",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "has proper part",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The usual mereological relation: transitive, asymmetric, and irreflexive."
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isProperPartOf"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#hasSetting",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "has setting",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The settingFor relation is the projection of c.DnS over situations and entities. \nIt formalizes the intuition of an entity being contextualized or 'situated'. For example: \nisSettingFor(MandateForGovernmentToProdi, Napolitano, 2007)"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isSettingFor"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#instantiatesAgent",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isAgentInstantiatedBy"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "A SocialAgent A1 instantiates another A2 when A1 is identical to A2 at a certain time. For example, Prodi2 Government instantiated the Italian Government in 2007."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "instantiates",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#interprets",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#GroundEntity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The generic relation of interpretation between an agent and an entity at some time is a projection of c.DnS. \nIn its full unfolding, it depends on the constructive assumption by which interpretation of entities by some agent at some time is logically dependent on descriptions, situations, concepts, collectives, and information objects."
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isInterpretedBy"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "interprets",
+                "@language": "en"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#introduces",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Descriptions can also introduce social agents, which are here entities such as persons, organizations, institutional figures, etc. For example:\n\nintroduces(ItalianConstitution, ItalianGovernment)\nintroduces(FIATLegalConstitution, FIAT_SpA)\n\nAlthough the introduction of agents falls under the relationality principle, like definition and usage, it has a different intuition from definition and usage, because concepts and agents are disjoint classes, where the differences are: \n agents can share descriptions, concepts can not\n agents (specially organizations) typically depute concepts, and not vice versa \n social agents are acted by some physical agent that is classified by some concept deputed by that social agent. Concepts are not acted by anything."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "introduces",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isIntroducedBy"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isAbout",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is about",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Aboutness states that, if the description expressed by an information object is satisfied by a situation, the information object can be about any entity that is in the setting of said situation. Such composition cannot be expressed in OWL.\nFor example, the Italian Constitution is (also) about Italy."
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isReferentOf"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isActedBy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#actsFor"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is acted by",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isAgentInstantiatedBy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is instantiated by",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#instantiatesAgent"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isAssumedBy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is assumed by",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#assumes"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isConceptualizedBy"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isCharacterizedBy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is characterized by",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#characterizes"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isClassifiedBy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is classified by",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#classifies"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isConceptUsedIn",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is concept used in",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#usesConcept"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isConceptualizedBy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#conceptualizes"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is conceptualized by",
+                "@language": "en"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isCoveredBy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is covered by",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#covers"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isDefinedIn",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is defined in",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#defines"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isDeputedBy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is deputed by",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#deputes"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isDescribedIn",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is described in",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#describes"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isExpressedBy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is expressed by",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#expresses"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isInScopeOf",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is in scope of",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The hasInScope relation reflects the intuition that situations can be epistemologically layered when a description d1 describes another description d2. When this happens, any situation s1 that satisfies d1 'has in its scope' another situation s2 that satisfies d2. A theorem is that s1 is a setting for d2. For example:\n\nhasInScope(MurderCase_1, CaesarStabbedByBrutus)\n\nmeans that a certain murder case (a murder situation under a certain normative description) has in scope the social fact (an aggression situation under a social description) of Caesar being stabbed by Brutus. This assertion is the consequence that a normative description has been applied to a social fact, involving its social description (e.g. a witness report), which becomes an element in the setting of the murder case.\nNotice that we cannot also claim that Caesar being stabbed by Brutus is on its turn in the setting of the murder case, because the case is precisely about evaluating that reported fact, not about assuming it."
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#hasInScope"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isInterpretedBy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#GroundEntity"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#interprets"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is interpreted by",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isIntroducedBy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#introduces"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is introduced by",
+                "@language": "en"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isMemberOf",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is member of",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#hasMember"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isProperPartOf",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#TransitiveProperty",
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is proper part of",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#hasProperPart"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isRedescribedBy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is redescribed by",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#redescribes"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isReferentOf",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is referent of",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isAbout"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#InformationObject"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isSatisfiedBy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is satisfied by",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#satisfies"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isSettingFor",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is setting for",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Entity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#hasSetting"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isSpecializedBy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is specialized by",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#specializes"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isUnifiedBy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "is unified by",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#unifies"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#mutuallyDependent",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "http://www.w3.org/2002/07/owl#SymmetricProperty"
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#mutuallyDependent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "mutually dependent",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Two Concept(s) that are mutually dependent (dual) in the context of a ; for example, two arguer roles in a discussion, a buyer and a seller role, etc."
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#redescribes",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SocialAgent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The application of epistemological layering is fundamental in c.DnS, since it accounts for the role of agents in the application of a description to some situation, i.e., in order to include the ontological commitment within an ontologys domain of discourse. In practice, ontological commitment postulates the action of some agent that has the capability and the intention to (re)describe a situation. \nThis is formalized by means of the relation 'redescribes', which is the projection of c.DnS over social agents and situations. For example: \nredescribes(SherlockHolmes, HoundOfBaskervilleFact, 1890)"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "redescribes",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isRedescribedBy"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#satisfies",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "satisfies",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The satisfies relation is the projection of c.DnS over situations and descriptions. \nIt formalizes the intuition of an instantiation of a gestalt, or cognitive context. For example: \n\nsatisfies(MandateForGovernmentToProdi, LawForGovernmentFormation)"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Situation"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isSatisfiedBy"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#specializes",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "specializes",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The specializes relation is the projection of c.DnS between schematic entities. It conveys the intuition of a taxonomic schema across schematic entities. In the following example, the social agent Prodi2Government specializes Italian Government:\n\nspecializes(Prodi2Government, ItalianGovernment)\n\nThe difference between specializes and the traditional subClassOf and instanceOf relations is subtle. Firstly, specializes can be considered as a reification of subClassOf, since the latter holds for logical classes, while specializes holds for schematic entities.\nSecondly, since we are using first-order logic with a model-theoretic semantics, the subClassOf and instanceOf relations can also be used with schematic entities, and the choice between specializes and instanceOf often results to be a matter of good practice. For example, we may want to consider Government as a class instead of a social agent, if there is no given description that introduces government as a social agent. \nOn the contrary, ItalianGovernment is introduced by the description ItalianConstitution, therefore it can be suitably modeled as a social agent. Therefore, Government is subClassOf A (Social Agent), Prodi2Government specializes ItalianGovernment, and both are instanceOf Government."
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isSpecializedBy"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#SchematicEntity"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#unifies",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "unifies",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The descriptions that define the concept(s) or concept collections that cover a collection are said to unify it. \nThe following statement \n\nunifies(ItalianConstitution, ItalianMinisterCouncil)\n\ncan be inferred as a theorem, since unifies composes the relations defines and covers, the description ItalianConstitution defines the concept \nMinister, and Minister covers the collection ItalianMinisterCouncil, then ItalianConstitution unifies ItalianMinisterCouncil."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Collection"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isUnifiedBy"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#usesConcept",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "uses concept",
+                "@language": "en"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#isConceptUsedIn"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The usesConcept relation reflects the fact that, besides defining concepts, descriptions can also use concepts defined by some other description. \nFor example, \n\nuses(ChiefOfStateVisitEtiquette, MasterOfCeremonies)"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Concept"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://www.loa-cnr.it/ontologies/cDnS.owl#Description"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+    },
+    {
+        "@id": "http://www.w3.org/2002/07/owl#Class"
+    },
+    {
+        "@id": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+        "@id": "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    {
+        "@id": "http://www.w3.org/2002/07/owl#Restriction"
+    },
+    {
+        "@id": "http://www.w3.org/2002/07/owl#SymmetricProperty"
+    },
+    {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+    },
+    {
+        "@id": "http://www.w3.org/2002/07/owl#TransitiveProperty"
+    }
+]

@@ -19,60 +19,58 @@
   "class" : [
      { "id" : "author",  "type" : "owl:Class", "label": "Author" }
     ,{ "id" : "work",  "type" : "rdfs:Class", "label":"Work" }
-    ,{ "id" : "date_of_birth",  "type" : "rdfs:Datatype", "label": "Date of Birth" }
-    ,{ "id" : "pub_date",  "type" : "rdfs:Datatype", "label": "Publication Date" }
+    ,{ "id" : "date",  "type" : "rdfs:Datatype", "label": "Date" }
     ,{ "id" : "place", "type" : "rdfs:Datatype", "label": "Place"}
-    ,{ "id" : "concept", "type" : "rdfs:Datatype", "Concept"}
-    ,{ "id" : "university", "type" : "rdfs:Datatype", "University"}
+    ,{ "id" : "concept", "type" : "rdfs:Datatype", "label": "Concept"}
+    ,{ "id" : "university", "type" : "rdfs:Datatype", "label": "University"}
   ],
   
   "classAttribute" : [
      { "id" : "author",  "type" : "owl:Class", "label": "Author" }
     ,{ "id" : "work",  "type" : "rdfs:Class", "label":"Work" }
-    ,{ "id" : "date_of_birth",  "type" : "rdfs:Datatype", "label": "Date of Birth" }
-    ,{ "id" : "pub_date",  "type" : "rdfs:Datatype", "label": "Publication Date" }
+    ,{ "id" : "date",  "type" : "rdfs:Datatype", "label": "Date" }
     ,{ "id" : "place", "type" : "rdfs:Datatype", "label": "Place"}
-    ,{ "id" : "concept", "type" : "rdfs:Datatype", "Concept"}
-    ,{ "id" : "university", "type" : "rdfs:Datatype", "University"}
+    ,{ "id" : "concept", "type" : "rdfs:Datatype", "label": "Concept"}
+    ,{ "id" : "university", "type" : "rdfs:Datatype", "label": "University"}
   ],
   
   "property" : [
-     { "id" : "birth_date_",  "type" : "owl:datatypeProperty", "label": "was born in the year"  }
-    ,{ "id" : "taught_worked_at_", "type" : "owl:datatypeProperty", "label": "taught/worked at"}
-    ,{ "id" : "pub_date_",  "type" : "owl:datatypeProperty", "label":"was published in the year"  }
-    ,{ "id" : "author_falls_under",  "type" : "owl:objectProperty"   }
-    ,{ "id" : "described_followed_was_",  "type" : "owl:objectProperty", "label":"described/followed/was a"  }
-    ,{ "id" : "wrote_edited_",  "type" : "owl:objectProperty", "label": "wroted/edited"  }
-    ,{ "id" : "inspired_", "type" : "owl:objectProperty", "label": "inspired"}
-    ,{ "id" : "opposed_",  "type" : "owl:ObjectProperty", "label":"opposed" }
-    ,{ "id" : "introduced_author", "type" : "owl:datatypeProperty"}
-    ,{ "id" : "popularized_author", "type" : "owl:datatypeProperty"}
-    ,{ "id" : "discussed_author", "type" : "owl:datatypeProperty"}
-    ,{ "id" : "introduced_work", "type" : "owl:datatypeProperty"}
-    ,{ "id" : "popularized_work", "type" : "owl:datatypeProperty"}
-    ,{ "id" : "discussed_work", "type" : "owl:datatypeProperty"}
-    ,{ "id" : "was_a_stundent_of", "type" : "owl:objectProperty"}
-    ,{ "id" : "inspired", "type" : "owl:objectProperty"}
+    {"type":"owl:DatatypeProperty", "id":"pub_date_", "domain": "work", "range": "date","label":"was published in year"},
+    {"type":"owl:DatatypeProperty", "id":"birth_date_", "domain":"author", "range":"date", "label":"was born in the year"}, 
+    {"type":"owl:DatatypeProperty", "id":"described_followed_was_", "domain":"author", "range":"concept", "label":"described and/or followed and/or was a"}, 
+    {"type":"owl:DatatypeProperty", "id":"opposed_w_c_", "domain":"work", "range":"concept", "label":"opposed"},
+    {"type":"owl:DatatypeProperty", "id":"got_phd_from_", "domain":"author", "range":"university", "label":"got their PhD from"},
+    {"type":"owl:DatatypeProperty", "id":"grad_date_", "domain":"author", "range":"date", "label":"got their PhD in the year"},
+    {"type":"owl:DatatypeProperty", "id":"taught_worked_at_", "domain":"author", "range":"university", "label":"taught/worked at"},
+    {"type":"owl:DatatypeProperty", "id":"studied_at_", "domain":"author", "range":"university", "label":"studied at"},
+    {"type":"owl:DatatypeProperty", "id":"phd_subject_", "domain":"author", "range":"concept", "label":"did their PhD on"},
+    {"type":"owl:DatatypeProperty", "id":"from_lived_in_", "domain":"author", "range":"place", "label":"is/was from or lived in"},
+    {"type":"owl:objectProperty", "id":"wrote_edited_", "domain":"author", "range":"work", "label":"wrote/edited"}, 
+    {"type":"owl:objectProperty", "id":"inspired_w_w", "domain":"work", "range":"work", "label":"inspired"}, 
+    {"type":"owl:objectProperty", "id":"opposed_w_w_", "domain":"work", "range":"work", "label":"opposed"},
+    {"type":"owl:objectProperty", "id":"advised_", "domain":"author", "range":"author", "label":"advised"},
+    {"type":"owl:objectProperty", "id":"taught_", "domain":"author", "range":"author", "label":"taught"},
+    {"type":"owl:objectProperty", "id":"committee_member_", "domain":"author", "range":"author", "label":"was on the committee for"},
+    {"type":"owl:objectProperty", "id":"contributed_", "domain":"author", "range":"work", "label":"contributed to"}
   ],
   
   "propertyAttribute" : [
-     { "id":"was_born_in" , "domain" : "author",  "range" : "date_of_birth", "label": "was born in" }
-    ,{ "id":"worked_in" , "domain" : "author",  "range" : "place", "label": "worked in" }
-    ,{ "id":"was_published_in_year" , "domain" : "work",  "range" : "pub_date", "label": "was published in the year" }
-    ,{ "id":"was_published_in_place" , "domain" : "work",  "range" : "place", "label": "was published in" }
-    ,{ "id":"author_falls_under" , "domain" : "author",  "range" : "camp_theory", "label": "supported the theory" }
-    ,{ "id":"work_falls_under", "domain" : "work", "range" : "camp_theory", "label": "supported the theory"}
-    ,{ "id":"wrote", "domain" : "author", "range" : "work", "label": "wrote"}
-    ,{ "id":"summarized_by" , "domain" : "work",  "range" : "slogan", "label": "can be summarized by saying" }
-    ,{ "id":"built_on", "domain" : "work", "range" : "work", "label": "built upon"}
-    ,{ "id":"went_against", "domain" : "work", "range" : "work", "label": "argued against"}
-    ,{ "id" : "introduced_author", "domain" : "author", "range" : "subject", "label" : "introduced"}
-    ,{ "id" : "popularized_author", "domain" : "author", "range" : "subject", "label" : "popularized"}
-    ,{ "id" : "discussed_author", "domain" : "author", "range" : "subject", "label" : "discussed"}
-    ,{ "id" : "introduced_work", "domain" : "work", "range" : "subject", "label" : "introduced"}
-    ,{ "id" : "popularized_work", "domain" : "work", "range" : "subject", "label" : "popularized"}
-    ,{ "id" : "discussed_work", "domain" : "work", "range" : "subject", "label" : "discussed"}
-    ,{ "id" : "was_a_stundent_of", "domain" : "author", "range" : "author", "label" : "was a student of"}
-    ,{ "id" : "inspired", "domain" : "author", "range" : "author", "label" : "inspired"}
+    {"type":"owl:DatatypeProperty", "id":"pub_date_", "domain": "work", "range": "date","label":"was published in year"},
+    {"type":"owl:DatatypeProperty", "id":"birth_date_", "domain":"author", "range":"date", "label":"was born in the year"}, 
+    {"type":"owl:DatatypeProperty", "id":"described_followed_was_", "domain":"author", "range":"concept", "label":"described and/or followed and/or was a"}, 
+    {"type":"owl:DatatypeProperty", "id":"opposed_w_w_", "domain":"work", "range":"work", "label":"opposed"},
+    {"type":"owl:DatatypeProperty", "id":"got_phd_from_", "domain":"author", "range":"university", "label":"got their PhD from"},
+    {"type":"owl:DatatypeProperty", "id":"grad_date_", "domain":"author", "range":"date", "label":"got their PhD in the year"},
+    {"type":"owl:DatatypeProperty", "id":"taught_worked_at_", "domain":"author", "range":"university", "label":"taught/worked at"},
+    {"type":"owl:DatatypeProperty", "id":"studied_at_", "domain":"author", "range":"university", "label":"studied at"},
+    {"type":"owl:DatatypeProperty", "id":"phd_subject_", "domain":"author", "range":"concept", "label":"did their PhD on"},
+    {"type":"owl:DatatypeProperty", "id":"from_lived_in_", "domain":"author", "range":"place", "label":"is/was from or lived in"},
+    {"type":"owl:objectProperty", "id":"wrote_edited_", "domain":"author", "range":"work", "label":"wrote/edited"}, 
+    {"type":"owl:objectProperty", "id":"inspired_w_w", "domain":"work", "range":"work", "label":"inspired"}, 
+    {"type":"owl:objectProperty", "id":"opposed_w_w_", "domain":"work", "range":"work", "label":"opposed"},
+    {"type":"owl:objectProperty", "id":"advised_", "domain":"author", "range":"author", "label":"advised"},
+    {"type":"owl:objectProperty", "id":"taught_", "domain":"author", "range":"author", "label":"taught"},
+    {"type":"owl:objectProperty", "id":"committee_member_", "domain":"author", "range":"author", "label":"was on the committee for"},
+    {"type":"owl:objectProperty", "id":"contributed_", "domain":"author", "range":"work", "label":"contributed to"}
   ]
 }

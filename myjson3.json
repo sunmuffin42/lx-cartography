@@ -227,6 +227,103 @@
 			"type": "rdfs:datatype",
 			"label": "1951",
 			"category": "date"
+		},
+		{
+			"id": "thomas_stewart",
+			"type": "owl:Class",
+			"label": "Thomas Stewart",
+			"category": "author"
+		},
+		{
+			"id": "contemporary_morphological_theories",
+			"type": "rdfs:Class",
+			"label": "Contemporary Morphological Theories",
+			"category": "work"
+		},
+		{
+			"id": "2016",
+			"type": "rdfs:datatype",
+			"label": "2016",
+			"category": "date"
+		},
+		{
+			"id": "ryan_sullivant",
+			"type": "owl:Class",
+			"label": "Ryan Sullivant",
+			"category": "author"
+		},
+		{
+			"id": "1984",
+			"type": "rdfs:datatype",
+			"label": "1984",
+			"category": "date"
+		},
+		{
+			"id": "anthony_woodbury",
+			"type": "owl:Class",
+			"label": "Anthony Woodbury",
+			"category": "author"
+		},
+		{
+			"id": "mary_haas",
+			"type": "owl:Class",
+			"label": "Mary Haas",
+			"category": "author"
+		},
+		{
+			"id": "edward_sapir",
+			"type": "owl:Class",
+			"label": "Edward Sapir",
+			"category": "author"
+		},
+		{
+			"id": "franz_boas",
+			"type": "owl:Class",
+			"label": "Franz Boas",
+			"category": "author"
+		},
+		{
+			"id": "joel_sherzer",
+			"type": "owl:Class",
+			"label": "Joel Sherzer",
+			"category": "author"
+		},
+		{
+			"id": "oberlin",
+			"type": "rdfs:datatype",
+			"label": "Oberlin",
+			"category": "university"
+		},
+		{
+			"id": "arnold_zwicky",
+			"type": "owl:Class",
+			"label": "Arnold Zwicky",
+			"category": "author",
+			"iri": "https://en.wikipedia.org/wiki/Arnold_Zwicky"
+		},
+		{
+			"id": "gregory_stump",
+			"type": "owl:Class",
+			"label": "Gregory Stump",
+			"category": "author"
+		},
+		{
+			"id": "lauri_karttunen",
+			"type": "owl:Class",
+			"label": "Lauri Karttunen",
+			"category": "author"
+		},
+		{
+			"id": "stanford_university",
+			"type": "rdfs:datatype",
+			"label": "Stanford University",
+			"category": "university"
+		},
+		{
+			"id": "the_ohio_state_university",
+			"type": "rdfs:datatype",
+			"label": "The Ohio State University",
+			"category": "university"
 		}
 	],
 	"classAttribute": [
@@ -433,6 +530,103 @@
 			"id": "1951",
 			"type": "rdfs:datatype",
 			"category": "date"
+		},
+		{
+			"label": "Thomas Stewart",
+			"id": "thomas_stewart",
+			"type": "owl:Class",
+			"category": "author"
+		},
+		{
+			"label": "Contemporary Morphological Theories",
+			"id": "contemporary_morphological_theories",
+			"type": "rdfs:Class",
+			"category": "work"
+		},
+		{
+			"label": "2016",
+			"id": "2016",
+			"type": "rdfs:datatype",
+			"category": "date"
+		},
+		{
+			"label": "Ryan Sullivant",
+			"id": "ryan_sullivant",
+			"type": "owl:Class",
+			"category": "author"
+		},
+		{
+			"label": "1984",
+			"id": "1984",
+			"type": "rdfs:datatype",
+			"category": "date"
+		},
+		{
+			"label": "Anthony Woodbury",
+			"id": "anthony_woodbury",
+			"type": "owl:Class",
+			"category": "author"
+		},
+		{
+			"label": "Mary Haas",
+			"id": "mary_haas",
+			"type": "owl:Class",
+			"category": "author"
+		},
+		{
+			"label": "Edward Sapir",
+			"id": "edward_sapir",
+			"type": "owl:Class",
+			"category": "author"
+		},
+		{
+			"label": "Franz Boas",
+			"id": "franz_boas",
+			"type": "owl:Class",
+			"category": "author"
+		},
+		{
+			"label": "Joel Sherzer",
+			"id": "joel_sherzer",
+			"type": "owl:Class",
+			"category": "author"
+		},
+		{
+			"label": "Oberlin",
+			"id": "oberlin",
+			"type": "rdfs:datatype",
+			"category": "university"
+		},
+		{
+			"label": "Arnold Zwicky",
+			"id": "arnold_zwicky",
+			"type": "owl:Class",
+			"category": "author",
+			"iri": "https://en.wikipedia.org/wiki/Arnold_Zwicky"
+		},
+		{
+			"label": "Gregory Stump",
+			"id": "gregory_stump",
+			"type": "owl:Class",
+			"category": "author"
+		},
+		{
+			"label": "Lauri Karttunen",
+			"id": "lauri_karttunen",
+			"type": "owl:Class",
+			"category": "author"
+		},
+		{
+			"label": "Stanford University",
+			"id": "stanford_university",
+			"type": "rdfs:datatype",
+			"category": "university"
+		},
+		{
+			"label": "The Ohio State University",
+			"id": "the_ohio_state_university",
+			"type": "rdfs:datatype",
+			"category": "university"
 		}
 	],
 	"property": [
@@ -680,6 +874,125 @@
 			"domain": "daniel_everett",
 			"range": "noam_chomsky",
 			"label": "opposed"
+		},
+		{
+			"id": "wrote_thomas_stewart_2016",
+			"type": "owl:objectProperty",
+			"domain": "thomas_stewart",
+			"range": "contemporary_morphological_theories",
+			"label": "wrote"
+		},
+		{
+			"id": "pub_date_thomas_stewart_2016",
+			"type": "owl:datatypeProperty",
+			"domain": "contemporary_morphological_theories",
+			"range": "2016",
+			"label": "was published in the year"
+		},
+		{
+			"id": "birth_date_ryan_sullivant_1984",
+			"type": "owl:datatypeProperty",
+			"domain": "ryan_sullivant",
+			"range": "1984",
+			"label": "was born in the year"
+		},
+		{
+			"id": "advised_anthony_woodbury_ryan_sullivant",
+			"type": "owl:objectProperty",
+			"domain": "anthony_woodbury",
+			"range": "ryan_sullivant",
+			"label": "advised"
+		},
+		{
+			"id": "advised_mary_haas_anthony_woodbury",
+			"type": "owl:objectProperty",
+			"domain": "mary_haas",
+			"range": "anthony_woodbury",
+			"label": "advised"
+		},
+		{
+			"id": "advised_edward_sapir_mary_haas",
+			"type": "owl:objectProperty",
+			"domain": "edward_sapir",
+			"range": "mary_haas",
+			"label": "advised"
+		},
+		{
+			"id": "advised_franz_boas_edward_sapir",
+			"type": "owl:objectProperty",
+			"domain": "franz_boas",
+			"range": "edward_sapir",
+			"label": "advised"
+		},
+		{
+			"id": "taught_worked_at_joel_sherzer_university_of_texas_at_austin",
+			"type": "owl:datatypeProperty",
+			"domain": "joel_sherzer",
+			"range": "university_of_texas_at_austin",
+			"label": "taught/worked at"
+		},
+		{
+			"id": "studied_at_joel_sherzer_oberlin",
+			"type": "owl:datatypeProperty",
+			"domain": "joel_sherzer",
+			"range": "oberlin",
+			"label": "studied at"
+		},
+		{
+			"id": "taught_worked_at_anthony_woodbury_university_of_texas_at_austin",
+			"type": "owl:datatypeProperty",
+			"domain": "anthony_woodbury",
+			"range": "university_of_texas_at_austin",
+			"label": "taught/worked at"
+		},
+		{
+			"id": "taught_arnold_zwicky_gregory_stump",
+			"type": "owl:objectProperty",
+			"domain": "arnold_zwicky",
+			"range": "gregory_stump",
+			"label": "taught"
+		},
+		{
+			"id": "committee_member_gregory_stump_thomas_stewart",
+			"type": "owl:objectProperty",
+			"domain": "gregory_stump",
+			"range": "thomas_stewart",
+			"label": "was on the committee for"
+		},
+		{
+			"id": "taught_worked_at_lauri_karttunen_stanford_university",
+			"type": "owl:datatypeProperty",
+			"domain": "lauri_karttunen",
+			"range": "stanford_university",
+			"label": "taught/worked at"
+		},
+		{
+			"id": "taught_worked_at_arnold_zwicky_stanford_university",
+			"type": "owl:datatypeProperty",
+			"domain": "arnold_zwicky",
+			"range": "stanford_university",
+			"label": "taught/worked at"
+		},
+		{
+			"id": "got_phd_from_gregory_stump_the_ohio_state_university",
+			"type": "owl:datatypeProperty",
+			"domain": "gregory_stump",
+			"range": "the_ohio_state_university",
+			"label": "got their PhD from"
+		},
+		{
+			"id": "taught_worked_at_arnold_zwicky_the_ohio_state_university",
+			"type": "owl:datatypeProperty",
+			"domain": "arnold_zwicky",
+			"range": "the_ohio_state_university",
+			"label": "taught/worked at"
+		},
+		{
+			"id": "opposed_gregory_stump_noam_chomsky",
+			"type": "owl:objectProperty",
+			"domain": "gregory_stump",
+			"range": "noam_chomsky",
+			"label": "opposed"
 		}
 	],
 	"propertyAttribute": [
@@ -925,6 +1238,125 @@
 			"id": "opposed_daniel_everett_noam_chomsky",
 			"type": "owl:objectProperty",
 			"domain": "daniel_everett",
+			"range": "noam_chomsky",
+			"label": "opposed"
+		},
+		{
+			"id": "wrote_thomas_stewart_2016",
+			"type": "owl:objectProperty",
+			"domain": "thomas_stewart",
+			"range": "contemporary_morphological_theories",
+			"label": "wrote"
+		},
+		{
+			"id": "pub_date_thomas_stewart_2016",
+			"type": "owl:datatypeProperty",
+			"domain": "contemporary_morphological_theories",
+			"range": "2016",
+			"label": "was published in the year"
+		},
+		{
+			"id": "birth_date_ryan_sullivant_1984",
+			"type": "owl:datatypeProperty",
+			"domain": "ryan_sullivant",
+			"range": "1984",
+			"label": "was born in the year"
+		},
+		{
+			"id": "advised_anthony_woodbury_ryan_sullivant",
+			"type": "owl:objectProperty",
+			"domain": "anthony_woodbury",
+			"range": "ryan_sullivant",
+			"label": "advised"
+		},
+		{
+			"id": "advised_mary_haas_anthony_woodbury",
+			"type": "owl:objectProperty",
+			"domain": "mary_haas",
+			"range": "anthony_woodbury",
+			"label": "advised"
+		},
+		{
+			"id": "advised_edward_sapir_mary_haas",
+			"type": "owl:objectProperty",
+			"domain": "edward_sapir",
+			"range": "mary_haas",
+			"label": "advised"
+		},
+		{
+			"id": "advised_franz_boas_edward_sapir",
+			"type": "owl:objectProperty",
+			"domain": "franz_boas",
+			"range": "edward_sapir",
+			"label": "advised"
+		},
+		{
+			"id": "taught_worked_at_joel_sherzer_university_of_texas_at_austin",
+			"type": "owl:datatypeProperty",
+			"domain": "joel_sherzer",
+			"range": "university_of_texas_at_austin",
+			"label": "taught/worked at"
+		},
+		{
+			"id": "studied_at_joel_sherzer_oberlin",
+			"type": "owl:datatypeProperty",
+			"domain": "joel_sherzer",
+			"range": "oberlin",
+			"label": "studied at"
+		},
+		{
+			"id": "taught_worked_at_anthony_woodbury_university_of_texas_at_austin",
+			"type": "owl:datatypeProperty",
+			"domain": "anthony_woodbury",
+			"range": "university_of_texas_at_austin",
+			"label": "taught/worked at"
+		},
+		{
+			"id": "taught_arnold_zwicky_gregory_stump",
+			"type": "owl:objectProperty",
+			"domain": "arnold_zwicky",
+			"range": "gregory_stump",
+			"label": "taught"
+		},
+		{
+			"id": "committee_member_gregory_stump_thomas_stewart",
+			"type": "owl:objectProperty",
+			"domain": "gregory_stump",
+			"range": "thomas_stewart",
+			"label": "was on the committee for"
+		},
+		{
+			"id": "taught_worked_at_lauri_karttunen_stanford_university",
+			"type": "owl:datatypeProperty",
+			"domain": "lauri_karttunen",
+			"range": "stanford_university",
+			"label": "taught/worked at"
+		},
+		{
+			"id": "taught_worked_at_arnold_zwicky_stanford_university",
+			"type": "owl:datatypeProperty",
+			"domain": "arnold_zwicky",
+			"range": "stanford_university",
+			"label": "taught/worked at"
+		},
+		{
+			"id": "got_phd_from_gregory_stump_the_ohio_state_university",
+			"type": "owl:datatypeProperty",
+			"domain": "gregory_stump",
+			"range": "the_ohio_state_university",
+			"label": "got their PhD from"
+		},
+		{
+			"id": "taught_worked_at_arnold_zwicky_the_ohio_state_university",
+			"type": "owl:datatypeProperty",
+			"domain": "arnold_zwicky",
+			"range": "the_ohio_state_university",
+			"label": "taught/worked at"
+		},
+		{
+			"id": "opposed_gregory_stump_noam_chomsky",
+			"type": "owl:objectProperty",
+			"domain": "gregory_stump",
 			"range": "noam_chomsky",
 			"label": "opposed"
 		}
