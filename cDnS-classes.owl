@@ -1,0 +1,278 @@
+<owl:Class rdf:ID="Bundle">
+    <rdfs:label xml:lang="en">Bundle</rdfs:label>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</owl:minCardinality>
+            <owl:onProperty>
+                <owl:TransitiveProperty rdf:ID="hasProperPart"/>
+            </owl:onProperty>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+        <owl:Class rdf:ID="Description"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty>
+                <owl:TransitiveProperty rdf:about="#hasProperPart"/>
+            </owl:onProperty>
+            <owl:someValuesFrom>
+                <owl:Class rdf:about="#Description"/>
+            </owl:someValuesFrom>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bundle is a (mereological) sum of (at least two) descriptions that are either all satisfied by a situation, or all define concepts that characterize a same collection. For example, a strategy comprising several plans and decision criteria is a bundle.</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:ID="Configuration">
+    <rdfs:label xml:lang="en">Configuration</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When unification is applied to the parts of an entity, so that the unifying description defines concepts that classify those parts, the collection is called configuration. The axioms for configurations cannot be represented in OWL1.0. For example, the collection of all parts of a car, when the unifying description is a functional design description, is a configuration.</rdfs:comment>
+    <rdfs:subClassOf>
+        <owl:Class rdf:ID="Collection"/>
+    </rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:ID="SocialAgent">
+    <owl:disjointWith>
+        <owl:Class rdf:about="#Collection"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:someValuesFrom>
+                <owl:Class rdf:ID="Entity"/>
+            </owl:someValuesFrom>
+            <owl:onProperty>
+                <owl:ObjectProperty rdf:ID="isActedBy"/>
+            </owl:onProperty>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+        <owl:Class rdf:about="#Description"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+        <owl:Class rdf:ID="InformationObject"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Social agents are individuals that have been created as social entities, and are assumed to 'share descriptions (=to be able to build relational contexts) of other entities, as members of some 'knowledge collective'. In other words, agents in c.DnS are members of some community that shares some knowledge, and as such, they are able to 'carve up' the world into contexts. Social agents are also required to be 'acted by' some physical entity, and such entities can be called 'physical agents' (see ontology ground.owl). Common sense agents are actually either social individuals (companies, organizations, institutions, governments), or physical individuals that can take roles for those social individuals. Notice that this notion of agent excludes purely causal agents like avalanches, stones, bullets, viruses, etc., because those do not act for socially-constructed agents, but are simply participants to events according to laws of nature, and with no ability to 'share' (=self-represent, build) knowledge. Notice also that the notion of (computational) agent in AI is operational, i.e. it depends on the operations that are allowed to a computational entity, and therefore is more alike to artifacts than to social agents. Social agents include persons and organizations, but never a bio-physical system that plays an agentive role (these are represented as non-schematic entities, see http://www.loa-cnr/ontologies/ground.owl). Social agents are related to other entities in c.DnS by means of the following projections: shares (holding between social agents and descriptions); redescribes (holding between social agents and situations); deputes (holding between social agents and concepts); exemplifies (holding between social agents).</rdfs:comment>
+    <owl:disjointWith>
+        <owl:Class rdf:ID="Situation"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+        <owl:Class rdf:ID="SchematicEntity"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Social agent</rdfs:label>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:someValuesFrom>
+                <owl:Class rdf:about="#Description"/>
+            </owl:someValuesFrom>
+            <owl:onProperty>
+                <owl:ObjectProperty rdf:ID="isIntroducedBy"/>
+            </owl:onProperty>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+        <owl:Class rdf:ID="Concept"/>
+    </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:ID="GroundEntity">
+    <owl:equivalentClass>
+        <owl:Restriction>
+            <owl:someValuesFrom>
+                <owl:Class rdf:about="#Description"/>
+            </owl:someValuesFrom>
+            <owl:onProperty>
+                <owl:ObjectProperty rdf:ID="isDescribedIn"/>
+            </owl:onProperty>
+        </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:label xml:lang="en">Ground entity</rdfs:label>
+    <rdfs:subClassOf>
+        <owl:Class rdf:about="#Entity"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty>
+                <owl:ObjectProperty rdf:ID="hasSetting"/>
+            </owl:onProperty>
+            <owl:someValuesFrom>
+                <owl:Class rdf:about="#Situation"/>
+            </owl:someValuesFrom>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The entities that are 'described' (see describes) are called ground entities, and can be either schematic or not, inherited from other ontologies or not. A ground entity is supposed to receive a unity criterion through its describes axioms; for example, an old cradle used as a flower pot receives a functional unity criterion through the Description 'old cradles can be used as containers in a furniture'.</rdfs:comment>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty>
+                <owl:ObjectProperty rdf:ID="isClassifiedBy"/>
+            </owl:onProperty>
+            <owl:someValuesFrom>
+                <owl:Class rdf:about="#Concept"/>
+            </owl:someValuesFrom>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="#InformationObject">
+    <owl:disjointWith rdf:resource="#SocialAgent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information Objects are naturalized units of information that can have a history and evolve, just like other social entities. Examples include texts, images, sounds, independently from how they are realized on a physical support. Information objects are related to other entities in c.DnS by means of the following projections: expresses (between information objects and descriptions), about (between information objects and entities), and realizedBy (between information objects and physical entities).</rdfs:comment>
+    <rdfs:subClassOf>
+        <owl:Class rdf:about="#SchematicEntity"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Information object</rdfs:label>
+    <owl:disjointWith>
+        <owl:Class rdf:about="#Situation"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+        <owl:Class rdf:about="#Description"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+        <owl:Class rdf:about="#Concept"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+        <owl:Class rdf:about="#Collection"/>
+    </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:ID="NonSchematicEntity">
+    <owl:disjointWith>
+        <owl:Class rdf:about="#SchematicEntity"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+        <owl:Class rdf:about="#Entity"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>Any entity that is not schematic, i.e. purely constructed by cognitive or social systems.</rdfs:comment>
+    <rdfs:label xml:lang="en">Non-schematic entity</rdfs:label>
+</owl:Class>
+<owl:Class rdf:about="#Description">
+    <owl:disjointWith>
+        <owl:Class rdf:about="#Situation"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#InformationObject"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="#InformationObject"/>
+            <owl:onProperty>
+                <owl:ObjectProperty rdf:ID="isExpressedBy"/>
+            </owl:onProperty>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Descriptions are entities that represent a conceptualization. They are dependent on some cdns:SocialAgent and are communicable in principle. Examples of descriptions include regulations, plans, laws, diagnoses, projects, narratives, techniques, etc. Descriptions have typical components, called cdns:Concept(s), and are related to other entities in c.DnS by means of the following projections: cdns:defines (which hold between descriptions and concepts); cdns:describes, ground:isIndividuallyConstructedAs (compositions of relations, holding between descriptions and entities); cdns:unifies (holding between descriptions and collections).</rdfs:comment>
+    <rdfs:label xml:lang="en">Description</rdfs:label>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="#SocialAgent"/>
+            <owl:onProperty>
+                <owl:ObjectProperty rdf:ID="isConceptualizedBy"/>
+            </owl:onProperty>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+        <owl:Class rdf:about="#Concept"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#SocialAgent"/>
+    <rdfs:subClassOf>
+        <owl:Class rdf:about="#SchematicEntity"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+        <owl:Class rdf:about="#Collection"/>
+    </owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="#Collection">
+    <rdfs:subClassOf>
+        <owl:Class rdf:about="#SchematicEntity"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#SocialAgent"/>
+    <owl:disjointWith rdf:resource="#Description"/>
+    <owl:disjointWith>
+        <owl:Class rdf:about="#Situation"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#InformationObject"/>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="#Description"/>
+            <owl:onProperty>
+                <owl:ObjectProperty rdf:ID="isUnifiedBy"/>
+            </owl:onProperty>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+        <owl:Class rdf:about="#Concept"/>
+    </owl:disjointWith>
+    <rdfs:label xml:lang="en">Collection</rdfs:label>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:someValuesFrom>
+                <owl:Class rdf:about="#Concept"/>
+            </owl:someValuesFrom>
+            <owl:onProperty>
+                <owl:ObjectProperty rdf:ID="isCoveredBy"/>
+            </owl:onProperty>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collections are naturalizations in space-time of proper classes with (at least one) basic properties for membership. This seems to capture the common sense intuition underlying groups, teams, collections, collectives, associations, etc. Collection are related to other entities in c.DnS by means of the following projections: unifiedBy (holding between a descriptions and a collections); coveredBy, characterizedBy (holding between concepts and collections); hasMember (holding between entities and collections).</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="#Concept">
+    <owl:disjointWith>
+        <owl:Class rdf:about="#Situation"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="#Description"/>
+            <owl:onProperty>
+                <owl:ObjectProperty rdf:ID="isDefinedIn"/>
+            </owl:onProperty>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:cardinality>
+            <owl:onProperty>
+                <owl:ObjectProperty rdf:about="#isDefinedIn"/>
+            </owl:onProperty>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concepts are defined by a unique Description and can be used in other descriptions. Concepts are related to other entities in c.DnS by means of the following projections: classifies (holding between concepts and entities); covers, characterizes (holding between concepts and collections).</rdfs:comment>
+    <owl:disjointWith rdf:resource="#InformationObject"/>
+    <rdfs:subClassOf>
+        <owl:Class rdf:about="#SchematicEntity"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Concept</rdfs:label>
+    <owl:disjointWith rdf:resource="#Description"/>
+    <owl:disjointWith rdf:resource="#Collection"/>
+    <owl:disjointWith rdf:resource="#SocialAgent"/>
+</owl:Class>
+<owl:Class rdf:about="#SchematicEntity">
+    <owl:disjointWith rdf:resource="#NonSchematicEntity"/>
+    <rdfs:label xml:lang="en">Schematic entity</rdfs:label>
+    <rdfs:subClassOf>
+        <owl:Class rdf:about="#Entity"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The entities that are axiomatized in cDnS. They are proposed as primitives for a constructive ontology of social reality, and have counterparts as reifications of model-theoretical primitives, as well as representations of cognitive schematic principles.</rdfs:comment>
+</owl:Class>
+<owl:Class rdf:about="#Situation">
+    <rdfs:subClassOf>
+        <owl:Restriction>
+            <owl:onProperty>
+                <owl:ObjectProperty rdf:ID="satisfies"/>
+            </owl:onProperty>
+            <owl:someValuesFrom rdf:resource="#Description"/>
+        </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Situations are entities that represent a relational context, under the assumption that its components carve up a view (a setting) on the domain of an ontology by virtue of a description. Examples of situations (corresponding to the examples of descriptions, see Description) are: facts, plan executions, legal cases, diagnostic cases, attempted projects, performances, technical actions, etc. Situations are related to other entities in c.DnS by means of the following projections: settingFor (holding between situations and entities); satisfies (holding between situations and descriptions); hasInScope (holding between situations).</rdfs:comment>
+    <owl:disjointWith rdf:resource="#Collection"/>
+    <owl:disjointWith rdf:resource="#SocialAgent"/>
+    <owl:disjointWith rdf:resource="#InformationObject"/>
+    <owl:disjointWith rdf:resource="#Concept"/>
+    <rdfs:label xml:lang="en">Situation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#SchematicEntity"/>
+    <owl:disjointWith rdf:resource="#Description"/>
+</owl:Class>
+<owl:Class rdf:about="#Entity">
+    <owl:equivalentClass>
+        <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+                <owl:Class rdf:about="#SchematicEntity"/>
+                <owl:Class rdf:about="#NonSchematicEntity"/>
+            </owl:unionOf>
+        </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Entities are anything that is assumed to exist in some domain of interest, for any possible world. Main subtypes of entities are schematic, and non-schematic. The first one is the focus of this ontology. The entities that are 'described' (see property describes) are called GroundEntity(s), and can be either schematic or not, inherited from other ontologies or not.</rdfs:comment>
+    <rdfs:label xml:lang="en">Entity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
