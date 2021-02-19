@@ -2,7 +2,7 @@
 ###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
 #################################################################
 
-@prefix : 		<inputstream:ontology1684440517626946> .
+@prefix : 	    <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite> .
 @prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: 		<http://www.w3.org/2002/07/owl#> .
@@ -12,1078 +12,1074 @@
 @prefix wot: 		<http://xmlns.com/wot/0.1/> .
 @prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
-@base 			<inputstream:ontology1684440517626946> .
+@base 			<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite> .
 
-<inputstream:ontology1684440517626946> rdf:type owl:Ontology ;
-                                       dc:title "undefined"@en;
-                                       dc:description "undefined"@en . 
+<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite> rdf:type owl:Ontology ;
+    dc:title "DOLCE-Lite"@en;
+    dc:description ""@en . 
 #################################################################
 
 ###  Property Definitions (Number of Property) 67 ###
 #  --------------------------- Property 0------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-proper-part-of> rdf:type owl:ObjectProperty; 
-                                                                              owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-proper-part> ;
-                                                                              rdfs:label "temporary-proper-part-of"@IRI-based; 
-                                                                              rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>;
-                                                                              rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> . 
+:temporary-proper-part-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :temporary-proper-part ;
+    rdfs:label "temporary-proper-part-of"@IRI-based; 
+    rdfs:domain :endurant;
+    rdfs:range :endurant . 
 #  --------------------------- Property 1------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-location-of> rdf:type owl:ObjectProperty; 
-                                                                          owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-location> ;
-                                                                          rdfs:label "physical-location-of"@IRI-based; 
-                                                                          rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region>;
-                                                                          rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant> . 
+:physical-location-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :physical-location ;
+    rdfs:label "physical-location-of"@IRI-based; 
+    rdfs:domain :physical-region;
+    rdfs:range :physical-endurant . 
 #  --------------------------- Property 2------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#immediate-relation> rdf:type owl:ObjectProperty ;
-                                                                       rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#conceptual-relation>;
-                                                                        rdfs:label "immediate-relation"@IRI-based; 
-                                                                        rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                                        rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:immediate-relation rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf :conceptual-relation;
+    rdfs:label "immediate-relation"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 3------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#host> rdf:type owl:ObjectProperty ;
-                                                         rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#immediate-relation>;
-                                                          rdfs:label "host"@IRI-based; 
-                                                          rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#feature>;
-                                                          rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:host rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf :immediate-relation;
+    rdfs:label "host"@IRI-based; 
+    rdfs:domain :feature;
+    rdfs:range :particular . 
 #  --------------------------- Property 4------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depends-on> rdf:type owl:ObjectProperty; 
-                                                                owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depend-on-of> ;
-                                                               rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mediated-relation>;
-                                                                rdfs:label "depends-on"@IRI-based; 
-                                                                rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>;
-                                                                rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> . 
+:depends-on rdf:type owl:ObjectProperty; 
+    owl:inverseOf :depend-on-of ;
+    rdfs:subPropertyOf :mediated-relation;
+    rdfs:label "depends-on"@IRI-based; 
+    rdfs:domain :endurant;
+    rdfs:range :endurant . 
 #  --------------------------- Property 5------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constant-participant-in> rdf:type owl:ObjectProperty; 
-                                                                             owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constant-participant> ;
-                                                                             rdfs:label "constant-participant-in"@IRI-based; 
-                                                                             rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>;
-                                                                             rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant> . 
+:constant-participant-in rdf:type owl:ObjectProperty; 
+    owl:inverseOf :constant-participant ;
+    rdfs:label "constant-participant-in"@IRI-based; 
+    rdfs:domain :endurant;
+    rdfs:range :perdurant . 
 #  --------------------------- Property 6------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location> rdf:type owl:ObjectProperty; 
-                                                                owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location-of> ;
-                                                               rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#immediate-relation>;
-                                                                rdfs:label "q-location"@IRI-based; 
-                                                                rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality>;
-                                                                rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region> . 
+:q-location rdf:type owl:ObjectProperty; 
+    owl:inverseOf :q-location-of ;
+    rdfs:subPropertyOf :immediate-relation;
+    rdfs:label "q-location"@IRI-based; 
+    rdfs:domain :quality;
+    rdfs:range :region . 
 #  --------------------------- Property 7------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depend-on-spatial-location-of> rdf:type owl:ObjectProperty; 
-                                                                                   owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depends-on-spatial-location> ;
-                                                                                   rdfs:label "depend-on-spatial-location-of"@IRI-based; 
-                                                                                   rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region>;
-                                                                                   rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant> . 
+:depend-on-spatial-location-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :depends-on-spatial-location ;
+    rdfs:label "depend-on-spatial-location-of"@IRI-based; 
+    rdfs:domain :space-region;
+    rdfs:range :non-physical-endurant . 
 #  --------------------------- Property 8------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-present-at> rdf:type owl:ObjectProperty; 
-                                                                  owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-of-q-presence-of> ;
-                                                                 rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mediated-relation>;
-                                                                  rdfs:label "q-present-at"@IRI-based; 
-                                                                  rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality>;
-                                                                  rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval> . 
+:q-present-at rdf:type owl:ObjectProperty; 
+    owl:inverseOf :time-of-q-presence-of ;
+    rdfs:subPropertyOf :mediated-relation;
+    rdfs:label "q-present-at"@IRI-based; 
+    rdfs:domain :physical-quality;
+    rdfs:range :time-interval . 
 #  --------------------------- Property 9------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality> rdf:type owl:ObjectProperty ;
-                                                                 rdfs:label "has-quality"@IRI-based; 
-                                                                 rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                                 rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality> . 
+:has-quality rdf:type owl:ObjectProperty ;
+    rdfs:label "has-quality"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :quality . 
 #  --------------------------- Property 10------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depend-on-of> rdf:type owl:ObjectProperty; 
-                                                                  owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depends-on> ;
-                                                                  rdfs:label "depend-on-of"@IRI-based; 
-                                                                  rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>;
-                                                                  rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> . 
+:depend-on-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :depends-on ;
+    rdfs:label "depend-on-of"@IRI-based; 
+    rdfs:domain :endurant;
+    rdfs:range :endurant . 
 #  --------------------------- Property 11------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#sibling-part> rdf:type owl:ObjectProperty; 
-                                                                  owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#sibling-part> ;
-                                                                 rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mediated-relation>;
-                                                                  rdfs:label "sibling-part"@IRI-based; 
-                                                                  rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                                  rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:sibling-part rdf:type owl:ObjectProperty; 
+    owl:inverseOf :sibling-part ;
+    rdfs:subPropertyOf :mediated-relation;
+    rdfs:label "sibling-part"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 12------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part-of> rdf:type owl:ObjectProperty; 
-                                                             owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part> ;
-                                                             rdfs:label "part-of"@IRI-based; 
-                                                             rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                             rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:part-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :part ;
+    rdfs:label "part-of"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 13------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#overlaps> rdf:type owl:ObjectProperty; 
-                                                              owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#overlaps> ;
-                                                             rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mediated-relation>;
-                                                              rdfs:label "overlaps"@IRI-based; 
-                                                              rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                              rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:overlaps rdf:type owl:ObjectProperty; 
+    owl:inverseOf :overlaps ;
+    rdfs:subPropertyOf :mediated-relation;
+    rdfs:label "overlaps"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 14------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-total-participant> rdf:type owl:ObjectProperty; 
-                                                                                 owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-total-participant-in> ;
-                                                                                rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant>;
-                                                                                 rdfs:label "temporary-total-participant"@IRI-based; 
-                                                                                 rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant>;
-                                                                                 rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> . 
+:temporary-total-participant rdf:type owl:ObjectProperty; 
+    owl:inverseOf :temporary-total-participant-in ;
+    rdfs:subPropertyOf :participant;
+    rdfs:label "temporary-total-participant"@IRI-based; 
+    rdfs:domain :perdurant;
+    rdfs:range :endurant . 
 #  --------------------------- Property 15------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#present-at> rdf:type owl:ObjectProperty; 
-                                                                owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-of-presence-of> ;
-                                                               rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#e-temporal-location>;
-                                                                rdfs:label "present-at"@IRI-based; 
-                                                                rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>;
-                                                                rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval> . 
+:present-at rdf:type owl:ObjectProperty; 
+    owl:inverseOf :time-of-presence-of ;
+    rdfs:subPropertyOf :e-temporal-location;
+    rdfs:label "present-at"@IRI-based; 
+    rdfs:domain :endurant;
+    rdfs:range :time-interval . 
 #  --------------------------- Property 16------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#p-spatial-location-of> rdf:type owl:ObjectProperty; 
-                                                                           owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#p-spatial-location> ;
-                                                                           rdfs:label "p-spatial-location-of"@IRI-based; 
-                                                                           rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region>;
-                                                                           rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant> . 
+:p-spatial-location-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :p-spatial-location ;
+    rdfs:label "p-spatial-location-of"@IRI-based; 
+    rdfs:domain :space-region;
+    rdfs:range :perdurant . 
 #  --------------------------- Property 17------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-location> rdf:type owl:ObjectProperty; 
-                                                                       owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-location-of> ;
-                                                                      rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location>;
-                                                                       rdfs:label "abstract-location"@IRI-based; 
-                                                                       rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant>;
-                                                                       rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-region> . 
+:abstract-location rdf:type owl:ObjectProperty; 
+    owl:inverseOf :abstract-location-of ;
+    rdfs:subPropertyOf :exact-location;
+    rdfs:label "abstract-location"@IRI-based; 
+    rdfs:domain :non-physical-endurant;
+    rdfs:range :abstract-region . 
 #  --------------------------- Property 18------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constant-participant> rdf:type owl:ObjectProperty; 
-                                                                          owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constant-participant-in> ;
-                                                                          rdfs:label "constant-participant"@IRI-based; 
-                                                                          rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant>;
-                                                                          rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> . 
+:constant-participant rdf:type owl:ObjectProperty; 
+    owl:inverseOf :constant-participant-in ;
+    rdfs:label "constant-participant"@IRI-based; 
+    rdfs:domain :perdurant;
+    rdfs:range :endurant . 
 #  --------------------------- Property 19------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in> rdf:type owl:ObjectProperty ;
-                                                                rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#immediate-relation>;
-                                                                 rdfs:label "inherent-in"@IRI-based; 
-                                                                 rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality>;
-                                                                 rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:inherent-in rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf :immediate-relation;
+    rdfs:label "inherent-in"@IRI-based; 
+    rdfs:domain :quality;
+    rdfs:range :particular . 
 #  --------------------------- Property 20------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-member> rdf:type owl:ObjectProperty; 
-                                                                owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#member-of> ;
-                                                               rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constituted-by>;
-                                                                rdfs:label "has-member"@IRI-based; 
-                                                                rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                                rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:has-member rdf:type owl:ObjectProperty; 
+    owl:inverseOf :member-of ;
+    rdfs:subPropertyOf :constituted-by;
+    rdfs:label "has-member"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 21------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quale> rdf:type owl:ObjectProperty; 
-                                                               owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quale-of> ;
-                                                              rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location>;
-                                                               rdfs:label "has-quale"@IRI-based; 
-                                                               rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality>;
-                                                               rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quale> . 
+:has-quale rdf:type owl:ObjectProperty; 
+    owl:inverseOf :quale-of ;
+    rdfs:subPropertyOf :q-location;
+    rdfs:label "has-quale"@IRI-based; 
+    rdfs:domain :quality;
+    rdfs:range :quale . 
 #  --------------------------- Property 22------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#total-participant-in> rdf:type owl:ObjectProperty; 
-                                                                          owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#total-participant> ;
-                                                                          rdfs:label "total-participant-in"@IRI-based; 
-                                                                          rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>;
-                                                                          rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant> . 
+:total-participant-in rdf:type owl:ObjectProperty; 
+    owl:inverseOf :total-participant ;
+    rdfs:label "total-participant-in"@IRI-based; 
+    rdfs:domain :endurant;
+    rdfs:range :perdurant . 
 #  --------------------------- Property 23------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#proper-part> rdf:type owl:ObjectProperty; 
-                                                                 owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#proper-part-of> ;
-                                                                rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part>;
-                                                                 rdfs:label "proper-part"@IRI-based; 
-                                                                 rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                                 rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:proper-part rdf:type owl:ObjectProperty; 
+    owl:inverseOf :proper-part-of ;
+    rdfs:subPropertyOf :part;
+    rdfs:label "proper-part"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 24------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#duration> rdf:type owl:ObjectProperty; 
-                                                              owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#duration-of> ;
-                                                             rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location>;
-                                                              rdfs:label "duration"@IRI-based; 
-                                                              rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant>;
-                                                              rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region> . 
+:duration rdf:type owl:ObjectProperty; 
+    owl:inverseOf :duration-of ;
+    rdfs:subPropertyOf :temporal-location;
+    rdfs:label "duration"@IRI-based; 
+    rdfs:domain :perdurant;
+    rdfs:range :temporal-region . 
 #  --------------------------- Property 25------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-of-presence-of> rdf:type owl:ObjectProperty; 
-                                                                         owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#present-at> ;
-                                                                         rdfs:label "time-of-presence-of"@IRI-based; 
-                                                                         rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval>;
-                                                                         rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> . 
+:time-of-presence-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :present-at ;
+    rdfs:label "time-of-presence-of"@IRI-based; 
+    rdfs:domain :time-interval;
+    rdfs:range :endurant . 
 #  --------------------------- Property 26------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#component-of> rdf:type owl:ObjectProperty; 
-                                                                  owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#component> ;
-                                                                  rdfs:label "component-of"@IRI-based; 
-                                                                  rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                                  rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:component-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :component ;
+    rdfs:label "component-of"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 27------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mediated-relation> rdf:type owl:ObjectProperty ;
-                                                                       rdfs:comment "
- relations are mediated when they embed other relations holding for 'hidden' arguments. for example, overlaps is the composition of part and part-of relations, with a hidden common part argument. 
-" ;
-                                                                      rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#conceptual-relation>;
-                                                                       rdfs:label "mediated-relation"@IRI-based; 
-                                                                       rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                                       rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:mediated-relation rdf:type owl:ObjectProperty ;
+    rdfs:comment "relations are mediated when they embed other relations holding for 'hidden' arguments. for example, overlaps is the composition of part and part-of relations, with a hidden common part argument." ;
+    rdfs:subPropertyOf :conceptual-relation;
+    rdfs:label "mediated-relation"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 28------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant> rdf:type owl:ObjectProperty; 
-                                                                 owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant-in> ;
-                                                                rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#immediate-relation>;
-                                                                 rdfs:label "participant"@IRI-based; 
-                                                                 rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant>;
-                                                                 rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> . 
+:participant rdf:type owl:ObjectProperty; 
+    owl:inverseOf :participant-in ;
+    rdfs:subPropertyOf :immediate-relation;
+    rdfs:label "participant"@IRI-based; 
+    rdfs:domain :perdurant;
+    rdfs:range :endurant . 
 #  --------------------------- Property 29------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-part> rdf:type owl:ObjectProperty; 
-                                                                    owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-part-of> ;
-                                                                   rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part>;
-                                                                    rdfs:label "temporary-part"@IRI-based; 
-                                                                    rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>;
-                                                                    rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> . 
+:temporary-part rdf:type owl:ObjectProperty; 
+    owl:inverseOf :temporary-part-of ;
+    rdfs:subPropertyOf :part;
+    rdfs:label "temporary-part"@IRI-based; 
+    rdfs:domain :endurant;
+    rdfs:range :endurant . 
 #  --------------------------- Property 30------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-proper-part> rdf:type owl:ObjectProperty; 
-                                                                           owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-proper-part-of> ;
-                                                                          rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#proper-part>;
-                                                                           rdfs:label "temporary-proper-part"@IRI-based; 
-                                                                           rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>;
-                                                                           rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> . 
+:temporary-proper-part rdf:type owl:ObjectProperty; 
+    owl:inverseOf :temporary-proper-part-of ;
+    rdfs:subPropertyOf :proper-part;
+    rdfs:label "temporary-proper-part"@IRI-based; 
+    rdfs:domain :endurant;
+    rdfs:range :endurant . 
 #  --------------------------- Property 31------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#total-participant> rdf:type owl:ObjectProperty; 
-                                                                       owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#total-participant-in> ;
-                                                                      rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant>;
-                                                                       rdfs:label "total-participant"@IRI-based; 
-                                                                       rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant>;
-                                                                       rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> . 
+:total-participant rdf:type owl:ObjectProperty; 
+    owl:inverseOf :total-participant-in ;
+    rdfs:subPropertyOf :participant;
+    rdfs:label "total-participant"@IRI-based; 
+    rdfs:domain :perdurant;
+    rdfs:range :endurant . 
 #  --------------------------- Property 32------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-of-happening-of> rdf:type owl:ObjectProperty; 
-                                                                          owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#happens-at> ;
-                                                                          rdfs:label "time-of-happening-of"@IRI-based; 
-                                                                          rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval>;
-                                                                          rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant> . 
+:time-of-happening-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :happens-at ;
+    rdfs:label "time-of-happening-of"@IRI-based; 
+    rdfs:domain :time-interval;
+    rdfs:range :perdurant . 
 #  --------------------------- Property 33------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-location> rdf:type owl:ObjectProperty; 
-                                                                       owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-location-of> ;
-                                                                      rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location>;
-                                                                       rdfs:label "physical-location"@IRI-based; 
-                                                                       rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant>;
-                                                                       rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region> . 
+:physical-location rdf:type owl:ObjectProperty; 
+    owl:inverseOf :physical-location-of ;
+    rdfs:subPropertyOf :exact-location;
+    rdfs:label "physical-location"@IRI-based; 
+    rdfs:domain :physical-endurant;
+    rdfs:range :physical-region . 
 #  --------------------------- Property 34------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#spatial-location> rdf:type owl:ObjectProperty; 
-                                                                      owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#spatial-location-of> ;
-                                                                     rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-location>;
-                                                                      rdfs:label "spatial-location"@IRI-based; 
-                                                                      rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant>;
-                                                                      rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region> . 
+:spatial-location rdf:type owl:ObjectProperty; 
+    owl:inverseOf :spatial-location-of ;
+    rdfs:subPropertyOf :physical-location;
+    rdfs:label "spatial-location"@IRI-based; 
+    rdfs:domain :physical-endurant;
+    rdfs:range :space-region . 
 #  --------------------------- Property 35------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-part-of> rdf:type owl:ObjectProperty; 
-                                                                       owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-part> ;
-                                                                       rdfs:label "temporary-part-of"@IRI-based; 
-                                                                       rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>;
-                                                                       rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> . 
+:temporary-part-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :temporary-part ;
+    rdfs:label "temporary-part-of"@IRI-based; 
+    rdfs:domain :endurant;
+    rdfs:range :endurant . 
 #  --------------------------- Property 36------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constituted-by> rdf:type owl:ObjectProperty; 
-                                                                    owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constitutes> ;
-                                                                   rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#immediate-relation>;
-                                                                    rdfs:label "constituted-by"@IRI-based; 
-                                                                    rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                                    rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:constituted-by rdf:type owl:ObjectProperty; 
+    owl:inverseOf :constitutes ;
+    rdfs:subPropertyOf :immediate-relation;
+    rdfs:label "constituted-by"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 37------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constitutes> rdf:type owl:ObjectProperty; 
-                                                                 owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constituted-by> ;
-                                                                 rdfs:label "constitutes"@IRI-based; 
-                                                                 rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                                 rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:constitutes rdf:type owl:ObjectProperty; 
+    owl:inverseOf :constituted-by ;
+    rdfs:label "constitutes"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 38------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quale-of> rdf:type owl:ObjectProperty; 
-                                                              owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quale> ;
-                                                              rdfs:label "quale-of"@IRI-based; 
-                                                              rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quale>;
-                                                              rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality> . 
+:quale-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :has-quale ;
+    rdfs:label "quale-of"@IRI-based; 
+    rdfs:domain :quale;
+    rdfs:range :quality . 
 #  --------------------------- Property 39------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#descriptively-depends-on> rdf:type owl:ObjectProperty; 
-                                                                              owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#descriptive-depend-on-of> ;
-                                                                             rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depends-on>;
-                                                                              rdfs:label "descriptively-depends-on"@IRI-based; 
-                                                                              rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>;
-                                                                              rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant> . 
+:descriptively-depends-on rdf:type owl:ObjectProperty; 
+    owl:inverseOf :descriptive-depend-on-of ;
+    rdfs:subPropertyOf :depends-on;
+    rdfs:label "descriptively-depends-on"@IRI-based; 
+    rdfs:domain :endurant;
+    rdfs:range :non-physical-endurant . 
 #  --------------------------- Property 40------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#e-temporal-location> rdf:type owl:ObjectProperty; 
-                                                                         owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#e-temporal-location-of> ;
-                                                                        rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location>;
-                                                                         rdfs:label "e-temporal-location"@IRI-based; 
-                                                                         rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>;
-                                                                         rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region> . 
+:e-temporal-location rdf:type owl:ObjectProperty; 
+    owl:inverseOf :e-temporal-location-of ;
+    rdfs:subPropertyOf :exact-location;
+    rdfs:label "e-temporal-location"@IRI-based; 
+    rdfs:domain :endurant;
+    rdfs:range :temporal-region . 
 #  --------------------------- Property 41------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#conceptual-relation> rdf:type owl:ObjectProperty; 
-                                                                         owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#conceptual-relation> ;
-                                                                         rdfs:label "conceptual-relation"@IRI-based; 
-                                                                         rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                                         rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:conceptual-relation rdf:type owl:ObjectProperty; 
+    owl:inverseOf :conceptual-relation ;
+    rdfs:label "conceptual-relation"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 42------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-component> rdf:type owl:ObjectProperty; 
-                                                                         owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-component-of> ;
-                                                                        rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#component>;
-                                                                         rdfs:label "temporary-component"@IRI-based; 
-                                                                         rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>;
-                                                                         rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> . 
+:temporary-component rdf:type owl:ObjectProperty; 
+    owl:inverseOf :temporary-component-of ;
+    rdfs:subPropertyOf :component;
+    rdfs:label "temporary-component"@IRI-based; 
+    rdfs:domain :endurant;
+    rdfs:range :endurant . 
 #  --------------------------- Property 43------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#proper-part-of> rdf:type owl:ObjectProperty; 
-                                                                    owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#proper-part> ;
-                                                                    rdfs:label "proper-part-of"@IRI-based; 
-                                                                    rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                                    rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:proper-part-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :proper-part ;
+    rdfs:label "proper-part-of"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 44------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-of-q-presence-of> rdf:type owl:ObjectProperty; 
-                                                                           owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-present-at> ;
-                                                                           rdfs:label "time-of-q-presence-of"@IRI-based; 
-                                                                           rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval>;
-                                                                           rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality> . 
+:time-of-q-presence-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :q-present-at ;
+    rdfs:label "time-of-q-presence-of"@IRI-based; 
+    rdfs:domain :time-interval;
+    rdfs:range :physical-quality . 
 #  --------------------------- Property 45------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#component> rdf:type owl:ObjectProperty; 
-                                                               owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#component-of> ;
-                                                              rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#proper-part>;
-                                                               rdfs:label "component"@IRI-based; 
-                                                               rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                               rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:component rdf:type owl:ObjectProperty; 
+    owl:inverseOf :component-of ;
+    rdfs:subPropertyOf :proper-part;
+    rdfs:label "component"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 46------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#happens-at> rdf:type owl:ObjectProperty; 
-                                                                owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-of-happening-of> ;
-                                                               rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location>;
-                                                                rdfs:label "happens-at"@IRI-based; 
-                                                                rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant>;
-                                                                rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval> . 
+:happens-at rdf:type owl:ObjectProperty; 
+    owl:inverseOf :time-of-happening-of ;
+    rdfs:subPropertyOf :temporal-location;
+    rdfs:label "happens-at"@IRI-based; 
+    rdfs:domain :perdurant;
+    rdfs:range :time-interval . 
 #  --------------------------- Property 47------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location-of> rdf:type owl:ObjectProperty; 
-                                                                   owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location> ;
-                                                                   rdfs:label "q-location-of"@IRI-based; 
-                                                                   rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region>;
-                                                                   rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality> . 
+:q-location-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :q-location ;
+    rdfs:label "q-location-of"@IRI-based; 
+    rdfs:domain :region;
+    rdfs:range :quality . 
 #  --------------------------- Property 48------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#p-spatial-location> rdf:type owl:ObjectProperty; 
-                                                                        owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#p-spatial-location-of> ;
-                                                                       rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location>;
-                                                                        rdfs:label "p-spatial-location"@IRI-based; 
-                                                                        rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant>;
-                                                                        rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region> . 
+:p-spatial-location rdf:type owl:ObjectProperty; 
+    owl:inverseOf :p-spatial-location-of ;
+    rdfs:subPropertyOf :exact-location;
+    rdfs:label "p-spatial-location"@IRI-based; 
+    rdfs:domain :perdurant;
+    rdfs:range :space-region . 
 #  --------------------------- Property 49------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#descriptive-depend-on-of> rdf:type owl:ObjectProperty; 
-                                                                              owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#descriptively-depends-on> ;
-                                                                              rdfs:label "descriptive-depend-on-of"@IRI-based; 
-                                                                              rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant>;
-                                                                              rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> . 
+:descriptive-depend-on-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :descriptively-depends-on ;
+    rdfs:label "descriptive-depend-on-of"@IRI-based; 
+    rdfs:domain :non-physical-endurant;
+    rdfs:range :endurant . 
 #  --------------------------- Property 50------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#partly-compresent> rdf:type owl:ObjectProperty; 
-                                                                       owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#partly-compresent> ;
-                                                                      rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mediated-relation>;
-                                                                       rdfs:label "partly-compresent"@IRI-based; 
-                                                                       rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>;
-                                                                       rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> . 
+:partly-compresent rdf:type owl:ObjectProperty; 
+    owl:inverseOf :partly-compresent ;
+    rdfs:subPropertyOf :mediated-relation;
+    rdfs:label "partly-compresent"@IRI-based; 
+    rdfs:domain :endurant;
+    rdfs:range :endurant . 
 #  --------------------------- Property 51------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant-in> rdf:type owl:ObjectProperty; 
-                                                                    owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant> ;
-                                                                    rdfs:label "participant-in"@IRI-based; 
-                                                                    rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>;
-                                                                    rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant> . 
+:participant-in rdf:type owl:ObjectProperty; 
+    owl:inverseOf :participant ;
+    rdfs:label "participant-in"@IRI-based; 
+    rdfs:domain :endurant;
+    rdfs:range :perdurant . 
 #  --------------------------- Property 52------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location> rdf:type owl:ObjectProperty; 
-                                                                       owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location-of> ;
-                                                                      rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location>;
-                                                                       rdfs:label "temporal-location"@IRI-based; 
-                                                                       rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant>;
-                                                                       rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region> . 
+:temporal-location rdf:type owl:ObjectProperty; 
+    owl:inverseOf :temporal-location-of ;
+    rdfs:subPropertyOf :exact-location;
+    rdfs:label "temporal-location"@IRI-based; 
+    rdfs:domain :perdurant;
+    rdfs:range :temporal-region . 
 #  --------------------------- Property 53------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#e-temporal-location-of> rdf:type owl:ObjectProperty; 
-                                                                            owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#e-temporal-location> ;
-                                                                            rdfs:label "e-temporal-location-of"@IRI-based; 
-                                                                            rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region>;
-                                                                            rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> . 
+:e-temporal-location-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :e-temporal-location ;
+    rdfs:label "e-temporal-location-of"@IRI-based; 
+    rdfs:domain :temporal-region;
+    rdfs:range :endurant . 
 #  --------------------------- Property 54------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#duration-of> rdf:type owl:ObjectProperty; 
-                                                                 owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#duration> ;
-                                                                 rdfs:label "duration-of"@IRI-based; 
-                                                                 rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region>;
-                                                                 rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant> . 
+:duration-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :duration ;
+    rdfs:label "duration-of"@IRI-based; 
+    rdfs:domain :temporal-region;
+    rdfs:range :perdurant . 
 #  --------------------------- Property 55------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depends-on-spatial-location> rdf:type owl:ObjectProperty; 
-                                                                                 owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depend-on-spatial-location-of> ;
-                                                                                rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location>;
-                                                                                 rdfs:label "depends-on-spatial-location"@IRI-based; 
-                                                                                 rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant>;
-                                                                                 rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region> . 
+:depends-on-spatial-location rdf:type owl:ObjectProperty; 
+    owl:inverseOf :depend-on-spatial-location-of ;
+    rdfs:subPropertyOf :exact-location;
+    rdfs:label "depends-on-spatial-location"@IRI-based; 
+    rdfs:domain :non-physical-endurant;
+    rdfs:range :space-region . 
 #  --------------------------- Property 56------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#generic-location> rdf:type owl:ObjectProperty; 
-                                                                      owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#generic-location-of> ;
-                                                                     rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mediated-relation>;
-                                                                      rdfs:label "generic-location"@IRI-based; 
-                                                                      rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                                      rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:generic-location rdf:type owl:ObjectProperty; 
+    owl:inverseOf :generic-location-of ;
+    rdfs:subPropertyOf :mediated-relation;
+    rdfs:label "generic-location"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 57------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#generic-location-of> rdf:type owl:ObjectProperty; 
-                                                                         owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#generic-location> ;
-                                                                         rdfs:label "generic-location-of"@IRI-based; 
-                                                                         rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                                         rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:generic-location-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :generic-location ;
+    rdfs:label "generic-location-of"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 58------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-location-of> rdf:type owl:ObjectProperty; 
-                                                                          owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-location> ;
-                                                                          rdfs:label "abstract-location-of"@IRI-based; 
-                                                                          rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-region>;
-                                                                          rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant> . 
+:abstract-location-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :abstract-location ;
+    rdfs:label "abstract-location-of"@IRI-based; 
+    rdfs:domain :abstract-region;
+    rdfs:range :non-physical-endurant . 
 #  --------------------------- Property 59------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#member-of> rdf:type owl:ObjectProperty; 
-                                                               owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-member> ;
-                                                               rdfs:label "member-of"@IRI-based; 
-                                                               rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                               rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:member-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :has-member ;
+    rdfs:label "member-of"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 60------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part> rdf:type owl:ObjectProperty; 
-                                                          owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part-of> ;
-                                                         rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#immediate-relation>;
-                                                          rdfs:label "part"@IRI-based; 
-                                                          rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                          rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:part rdf:type owl:ObjectProperty; 
+    owl:inverseOf :part-of ;
+    rdfs:subPropertyOf :immediate-relation;
+    rdfs:label "part"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :particular . 
 #  --------------------------- Property 61------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location-of> rdf:type owl:ObjectProperty; 
-                                                                          owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location> ;
-                                                                          rdfs:label "temporal-location-of"@IRI-based; 
-                                                                          rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region>;
-                                                                          rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant> . 
+:temporal-location-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :temporal-location ;
+    rdfs:label "temporal-location-of"@IRI-based; 
+    rdfs:domain :temporal-region;
+    rdfs:range :perdurant . 
 #  --------------------------- Property 62------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#spatial-location-of> rdf:type owl:ObjectProperty; 
-                                                                         owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#spatial-location> ;
-                                                                         rdfs:label "spatial-location-of"@IRI-based; 
-                                                                         rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region>;
-                                                                         rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant> . 
+:spatial-location-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :spatial-location ;
+    rdfs:label "spatial-location-of"@IRI-based; 
+    rdfs:domain :space-region;
+    rdfs:range :physical-endurant . 
 #  --------------------------- Property 63------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location-of> rdf:type owl:ObjectProperty; 
-                                                                       owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location> ;
-                                                                       rdfs:label "exact-location-of"@IRI-based; 
-                                                                       rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region>;
-                                                                       rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> . 
+:exact-location-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :exact-location ;
+    rdfs:label "exact-location-of"@IRI-based; 
+    rdfs:domain :region;
+    rdfs:range :particular . 
 #  --------------------------- Property 64------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-component-of> rdf:type owl:ObjectProperty; 
-                                                                            owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-component> ;
-                                                                            rdfs:label "temporary-component-of"@IRI-based; 
-                                                                            rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>;
-                                                                            rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> . 
+:temporary-component-of rdf:type owl:ObjectProperty; 
+    owl:inverseOf :temporary-component ;
+    rdfs:label "temporary-component-of"@IRI-based; 
+    rdfs:domain :endurant;
+    rdfs:range :endurant . 
 #  --------------------------- Property 65------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-total-participant-in> rdf:type owl:ObjectProperty; 
-                                                                                    owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-total-participant> ;
-                                                                                    rdfs:label "temporary-total-participant-in"@IRI-based; 
-                                                                                    rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>;
-                                                                                    rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant> . 
+:temporary-total-participant-in rdf:type owl:ObjectProperty; 
+    owl:inverseOf :temporary-total-participant ;
+    rdfs:label "temporary-total-participant-in"@IRI-based; 
+    rdfs:domain :endurant;
+    rdfs:range :perdurant . 
 #  --------------------------- Property 66------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location> rdf:type owl:ObjectProperty; 
-                                                                    owl:inverseOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location-of> ;
-                                                                   rdfs:subPropertyOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#generic-location>;
-                                                                    rdfs:label "exact-location"@IRI-based; 
-                                                                    rdfs:domain <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>;
-                                                                    rdfs:range <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region> . 
+:exact-location rdf:type owl:ObjectProperty; 
+    owl:inverseOf :exact-location-of ;
+    rdfs:subPropertyOf :generic-location;
+    rdfs:label "exact-location"@IRI-based; 
+    rdfs:domain :particular;
+    rdfs:range :region . 
 ###  Class Definitions (Number of Classes) 76 ###
 #  --------------------------- Class  0------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant> rdf:type owl:Class; 
-                                                                           rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> ;
-                                                                           rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                             owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depends-on-spatial-location>;
-                                                                                             owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region>
-                                                                                           ];
-                                                                           rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                             owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#descriptive-depend-on-of>;
-                                                                                             owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>
-                                                                                           ];
-                                                                           rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                             owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part>;
-                                                                                             owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant>
-                                                                                           ];
-                                                                           rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                             owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality>;
-                                                                                             owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-quality>
-                                                                                           ];
-                                                                           rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                             owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physically-depends-on>;
-                                                                                             owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant>
-                                                                                           ];
-                                                                           rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                             owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-location>;
-                                                                                             owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-region>
-                                                                                           ];
-                                                                           rdfs:label "non-physical-endurant"@IRI-based . 
+:non-physical-endurant rdf:type owl:Class; 
+    rdfs:subClassOf :endurant ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :depends-on-spatial-location;
+    owl:allValuesFrom :space-region
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :descriptive-depend-on-of;
+    owl:allValuesFrom :endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :part;
+    owl:allValuesFrom :non-physical-endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :has-quality;
+    owl:allValuesFrom :abstract-quality
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :physically-depends-on;
+    owl:allValuesFrom :physical-endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :abstract-location;
+    owl:allValuesFrom :abstract-region
+    ];
+    rdfs:label "non-physical-endurant"@IRI-based . 
 #  --------------------------- Class  1------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-object> rdf:type owl:Class; 
-                                                                     rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant> ;
-                                                                     owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#amount-of-matter> ;
-                                                                     rdfs:label "physical-object"@IRI-based . 
+:physical-object rdf:type owl:Class; 
+    rdfs:subClassOf :physical-endurant ;
+    owl:disjointWith :amount-of-matter ;
+    rdfs:label "physical-object"@IRI-based . 
 #  --------------------------- Class  2------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-quality> rdf:type owl:Class; 
-                                                                      rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                        owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in>;
-                                                                                        owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant>
-                                                                                      ];
-                                                                      rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                        owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location>;
-                                                                                        owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-region>
-                                                                                      ];
-                                                                      rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                        owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in>;
-                                                                                        owl:someValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant>
-                                                                                      ];
-                                                                      rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                        owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality>;
-                                                                                        owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-quality>
-                                                                                      ];
-                                                                      rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality> ;
-                                                                      rdfs:label "abstract-quality"@IRI-based . 
+:abstract-quality rdf:type owl:Class; 
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :inherent-in;
+    owl:allValuesFrom :non-physical-endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :q-location;
+    owl:allValuesFrom :abstract-region
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :inherent-in;
+    owl:someValuesFrom :non-physical-endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :has-quality;
+    owl:allValuesFrom :abstract-quality
+    ];
+    rdfs:subClassOf :quality ;
+    rdfs:label "abstract-quality"@IRI-based . 
 #  --------------------------- Class  3------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-social-object> rdf:type owl:Class; 
-                                                                                rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-object> ;
-                                                                                rdfs:label "non-agentive-social-object"@IRI-based . 
+:non-agentive-social-object rdf:type owl:Class; 
+    rdfs:subClassOf :social-object ;
+    rdfs:label "non-agentive-social-object"@IRI-based . 
 #  --------------------------- Class  4------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#socially-constructed-person> rdf:type owl:Class; 
-                                                                                 rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-agent> ;
-                                                                                 rdfs:label "socially-constructed-person"@IRI-based . 
+:socially-constructed-person rdf:type owl:Class; 
+    rdfs:subClassOf :social-agent ;
+    rdfs:label "socially-constructed-person"@IRI-based . 
 #  --------------------------- Class  5------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#volume> rdf:type owl:Class; 
-                                                            rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region> ;
-                                                            rdfs:label "volume"@IRI-based . 
+:volume rdf:type owl:Class; 
+    rdfs:subClassOf :physical-region ;
+    rdfs:label "volume"@IRI-based . 
 #  --------------------------- Class  6------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#date> rdf:type owl:Class; 
-                                                          rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval> ;
-                                                          rdfs:label "date"@IRI-based . 
+:date rdf:type owl:Class; 
+    rdfs:subClassOf :time-interval ;
+    rdfs:label "date"@IRI-based . 
 #  --------------------------- Class  7------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#activity> rdf:type owl:Class; 
-                                                              rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#accomplishment> ;
-                                                              rdfs:label "activity"@IRI-based . 
+:activity rdf:type owl:Class; 
+    rdfs:subClassOf :accomplishment ;
+    rdfs:label "activity"@IRI-based . 
 #  --------------------------- Class  8------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#construction> rdf:type owl:Class; 
-                                                                  rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#artifact> ;
-                                                                  rdfs:label "construction"@IRI-based . 
+:construction rdf:type owl:Class; 
+    rdfs:subClassOf :artifact ;
+    rdfs:label "construction"@IRI-based . 
 #  --------------------------- Class  9------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-region> rdf:type owl:Class; 
-                                                                     rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region> ;
-                                                                     rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                       owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part>;
-                                                                                       owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-region>
-                                                                                     ];
-                                                                     rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                       owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-location-of>;
-                                                                                       owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant>
-                                                                                     ];
-                                                                     rdfs:label "abstract-region"@IRI-based . 
+:abstract-region rdf:type owl:Class; 
+    rdfs:subClassOf :region ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :part;
+    owl:allValuesFrom :abstract-region
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :abstract-location-of;
+    owl:allValuesFrom :non-physical-endurant
+    ];
+    rdfs:label "abstract-region"@IRI-based . 
 #  --------------------------- Class  10------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> rdf:type owl:Class; 
-                                                                rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                  owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#generic-location>;
-                                                                                  owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>
-                                                                                ];
-                                                                rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                  owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality>;
-                                                                                  owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality>
-                                                                                ];
-                                                                rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                  owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#conceptual-relation>;
-                                                                                  owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>
-                                                                                ];
-                                                                rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                  owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#host-of>;
-                                                                                  owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#feature>
-                                                                                ];
-                                                                rdfs:label "particular"@IRI-based . 
+:particular rdf:type owl:Class; 
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :generic-location;
+    owl:allValuesFrom :particular
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :has-quality;
+    owl:allValuesFrom :quality
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :conceptual-relation;
+    owl:allValuesFrom :particular
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :host-of;
+    owl:allValuesFrom :feature
+    ];
+    rdfs:label "particular"@IRI-based . 
 #  --------------------------- Class  11------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#feature> rdf:type owl:Class; 
-                                                             rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant> ;
-                                                             rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                               owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#host>;
-                                                                               owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>
-                                                                             ];
-                                                             rdfs:label "feature"@IRI-based . 
+:feature rdf:type owl:Class; 
+    rdfs:subClassOf :physical-endurant ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :host;
+    owl:allValuesFrom :particular
+    ];
+    rdfs:label "feature"@IRI-based . 
 #  --------------------------- Class  12------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region> rdf:type owl:Class; 
-                                                                  rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region> ;
-                                                                  rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                    owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#spatial-location-of>;
-                                                                                    owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant>
-                                                                                  ];
-                                                                  rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                    owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depend-on-spatial-location-of>;
-                                                                                    owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant>
-                                                                                  ];
-                                                                  rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                    owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part>;
-                                                                                    owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region>
-                                                                                  ];
-                                                                  rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                    owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#p-spatial-location-of>;
-                                                                                    owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant>
-                                                                                  ];
-                                                                  rdfs:label "space-region"@IRI-based . 
+:space-region rdf:type owl:Class; 
+    rdfs:subClassOf :physical-region ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :spatial-location-of;
+    owl:allValuesFrom :physical-endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :depend-on-spatial-location-of;
+    owl:allValuesFrom :non-physical-endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :part;
+    owl:allValuesFrom :space-region
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :p-spatial-location-of;
+    owl:allValuesFrom :perdurant
+    ];
+    rdfs:label "space-region"@IRI-based . 
 #  --------------------------- Class  13------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-object> rdf:type owl:Class; 
-                                                                   rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-object> ;
-                                                                   owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mental-object> ;
-                                                                   rdfs:label "social-object"@IRI-based . 
+:social-object rdf:type owl:Class; 
+    rdfs:subClassOf :non-physical-object ;
+    owl:disjointWith :mental-object ;
+    rdfs:label "social-object"@IRI-based . 
 #  --------------------------- Class  14------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#equipment> rdf:type owl:Class; 
-                                                               rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#instrumentality> ;
-                                                               rdfs:label "equipment"@IRI-based . 
+:equipment rdf:type owl:Class; 
+    rdfs:subClassOf :instrumentality ;
+    rdfs:label "equipment"@IRI-based . 
 #  --------------------------- Class  15------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location-q> rdf:type owl:Class; 
-                                                                         rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-quality> ;
-                                                                         rdfs:label "temporal-location-q"@IRI-based . 
+:temporal-location-q rdf:type owl:Class; 
+    rdfs:subClassOf :temporal-quality ;
+    rdfs:label "temporal-location-q"@IRI-based . 
 #  --------------------------- Class  16------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-place> rdf:type owl:Class; 
-                                                                    rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-physical-object> ;
-                                                                    rdfs:label "physical-place"@IRI-based . 
+:physical-place rdf:type owl:Class; 
+    rdfs:subClassOf :non-agentive-physical-object ;
+    rdfs:label "physical-place"@IRI-based . 
 #  --------------------------- Class  17------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#agentive-physical-object> rdf:type owl:Class; 
-                                                                              rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-object> ;
-                                                                              rdfs:label "agentive-physical-object"@IRI-based . 
+:agentive-physical-object rdf:type owl:Class; 
+    rdfs:subClassOf :physical-object ;
+    rdfs:label "agentive-physical-object"@IRI-based . 
 #  --------------------------- Class  18------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#color-quality> rdf:type owl:Class; 
-                                                                   rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality> ;
-                                                                   rdfs:label "color-quality"@IRI-based . 
+:color-quality rdf:type owl:Class; 
+    rdfs:subClassOf :physical-quality ;
+    rdfs:label "color-quality"@IRI-based . 
 #  --------------------------- Class  19------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#transaction> rdf:type owl:Class; 
-                                                                 rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#activity> ;
-                                                                 rdfs:label "transaction"@IRI-based . 
+:transaction rdf:type owl:Class; 
+    rdfs:subClassOf :activity ;
+    rdfs:label "transaction"@IRI-based . 
 #  --------------------------- Class  20------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-unit> rdf:type owl:Class; 
-                                                                 rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-agent> ;
-                                                                 rdfs:label "social-unit"@IRI-based . 
+:social-unit rdf:type owl:Class; 
+    rdfs:subClassOf :social-agent ;
+    rdfs:label "social-unit"@IRI-based . 
 #  --------------------------- Class  21------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#dependent-place> rdf:type owl:Class; 
-                                                                     rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#feature> ;
-                                                                     rdfs:label "dependent-place"@IRI-based . 
+:dependent-place rdf:type owl:Class; 
+    rdfs:subClassOf :feature ;
+    rdfs:label "dependent-place"@IRI-based . 
 #  --------------------------- Class  22------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#information-object> rdf:type owl:Class; 
-                                                                        rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-social-object> ;
-                                                                        rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                          owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physically-depends-on>;
-                                                                                          owl:someValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>
-                                                                                        ];
-                                                                        rdfs:label "information-object"@IRI-based . 
+:information-object rdf:type owl:Class; 
+    rdfs:subClassOf :non-agentive-social-object ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :physically-depends-on;
+    owl:someValuesFrom :endurant
+    ];
+    rdfs:label "information-object"@IRI-based . 
 #  --------------------------- Class  23------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant> rdf:type owl:Class; 
-                                                               rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> ;
-                                                               rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                 owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant>;
-                                                                                 owl:someValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>
-                                                                               ];
-                                                               rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                 owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality>;
-                                                                                 owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-quality>
-                                                                               ];
-                                                               rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                 owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant>;
-                                                                                 owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>
-                                                                               ];
-                                                               owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> ;
-                                                               rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                 owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constituted-by>;
-                                                                                 owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant>
-                                                                               ];
-                                                               rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                 owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#p-spatial-location>;
-                                                                                 owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region>
-                                                                               ];
-                                                               rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                 owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part>;
-                                                                                 owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant>
-                                                                               ];
-                                                               rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                 owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality>;
-                                                                                 owl:someValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location-q>
-                                                                               ];
-                                                               rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                 owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#happens-at>;
-                                                                                 owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval>
-                                                                               ];
-                                                               rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                 owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location>;
-                                                                                 owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region>
-                                                                               ];
-                                                               owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract> ;
-                                                               rdfs:label "perdurant"@IRI-based . 
+:perdurant rdf:type owl:Class; 
+    rdfs:subClassOf :particular ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :participant;
+    owl:someValuesFrom :endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :has-quality;
+    owl:allValuesFrom :temporal-quality
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :participant;
+    owl:allValuesFrom :endurant
+    ];
+    owl:disjointWith :endurant ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :constituted-by;
+    owl:allValuesFrom :perdurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :p-spatial-location;
+    owl:allValuesFrom :space-region
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :part;
+    owl:allValuesFrom :perdurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :has-quality;
+    owl:someValuesFrom :temporal-location-q
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :happens-at;
+    owl:allValuesFrom :time-interval
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :temporal-location;
+    owl:allValuesFrom :temporal-region
+    ];
+    owl:disjointWith :abstract ;
+    rdfs:label "perdurant"@IRI-based . 
 #  --------------------------- Class  24------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region> rdf:type owl:Class; 
-                                                                     rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region> ;
-                                                                     owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-region> ;
-                                                                     rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                       owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#e-temporal-location-of>;
-                                                                                       owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>
-                                                                                     ];
-                                                                     rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                       owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part>;
-                                                                                       owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region>
-                                                                                     ];
-                                                                     rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                       owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location-of>;
-                                                                                       owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant>
-                                                                                     ];
-                                                                     rdfs:label "temporal-region"@IRI-based . 
+:temporal-region rdf:type owl:Class; 
+    rdfs:subClassOf :region ;
+    owl:disjointWith :abstract-region ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :e-temporal-location-of;
+    owl:allValuesFrom :endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :part;
+    owl:allValuesFrom :temporal-region
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :temporal-location-of;
+    owl:allValuesFrom :perdurant
+    ];
+    rdfs:label "temporal-region"@IRI-based . 
 #  --------------------------- Class  25------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval> rdf:type owl:Class; 
-                                                                   rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region> ;
-                                                                   rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                     owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-of-presence-of>;
-                                                                                     owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>
-                                                                                   ];
-                                                                   rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                     owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-of-q-presence-of>;
-                                                                                     owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality>
-                                                                                   ];
-                                                                   rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                     owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-of-happening-of>;
-                                                                                     owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant>
-                                                                                   ];
-                                                                   rdfs:label "time-interval"@IRI-based . 
+:time-interval rdf:type owl:Class; 
+    rdfs:subClassOf :temporal-region ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :time-of-presence-of;
+    owl:allValuesFrom :endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :time-of-q-presence-of;
+    owl:allValuesFrom :physical-quality
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :time-of-happening-of;
+    owl:allValuesFrom :perdurant
+    ];
+    rdfs:label "time-interval"@IRI-based . 
 #  --------------------------- Class  26------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#stative> rdf:type owl:Class; 
-                                                             rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant> ;
-                                                             rdfs:label "stative"@IRI-based . 
+:stative rdf:type owl:Class; 
+    rdfs:subClassOf :perdurant ;
+    rdfs:label "stative"@IRI-based . 
 #  --------------------------- Class  27------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#device> rdf:type owl:Class; 
-                                                            rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#instrumentality> ;
-                                                            rdfs:label "device"@IRI-based . 
+:device rdf:type owl:Class; 
+    rdfs:subClassOf :instrumentality ;
+    rdfs:label "device"@IRI-based . 
 #  --------------------------- Class  28------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region> rdf:type owl:Class; 
-                                                                     rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region> ;
-                                                                     owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-region> ;
-                                                                     rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                       owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part>;
-                                                                                       owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region>
-                                                                                     ];
-                                                                     rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                       owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-location-of>;
-                                                                                       owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant>
-                                                                                     ];
-                                                                     owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region> ;
-                                                                     rdfs:label "physical-region"@IRI-based . 
+:physical-region rdf:type owl:Class; 
+    rdfs:subClassOf :region ;
+    owl:disjointWith :abstract-region ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :part;
+    owl:allValuesFrom :physical-region
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :physical-location-of;
+    owl:allValuesFrom :physical-endurant
+    ];
+    owl:disjointWith :temporal-region ;
+    rdfs:label "physical-region"@IRI-based . 
 #  --------------------------- Class  29------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#achievement> rdf:type owl:Class; 
-                                                                 rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#event> ;
-                                                                 rdfs:label "achievement"@IRI-based . 
+:achievement rdf:type owl:Class; 
+    rdfs:subClassOf :event ;
+    rdfs:label "achievement"@IRI-based . 
 #  --------------------------- Class  30------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-place> rdf:type owl:Class; 
-                                                                        rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-social-object> ;
-                                                                        rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                          owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physically-depends-on>;
-                                                                                          owl:someValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-place>
-                                                                                        ];
-                                                                        rdfs:label "non-physical-place"@IRI-based . 
+:non-physical-place rdf:type owl:Class; 
+    rdfs:subClassOf :non-agentive-social-object ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :physically-depends-on;
+    owl:someValuesFrom :physical-place
+    ];
+    rdfs:label "non-physical-place"@IRI-based . 
 #  --------------------------- Class  31------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#organism> rdf:type owl:Class; 
-                                                              rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#biological-object> ;
-                                                              rdfs:label "organism"@IRI-based . 
+:organism rdf:type owl:Class; 
+    rdfs:subClassOf :biological-object ;
+    rdfs:label "organism"@IRI-based . 
 #  --------------------------- Class  32------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#commerce> rdf:type owl:Class; 
-                                                              rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#transaction> ;
-                                                              rdfs:label "commerce"@IRI-based . 
+:commerce rdf:type owl:Class; 
+    rdfs:subClassOf :transaction ;
+    rdfs:label "commerce"@IRI-based . 
 #  --------------------------- Class  33------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#society> rdf:type owl:Class; 
-                                                             rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#agentive-social-object> ;
-                                                             rdfs:label "society"@IRI-based . 
+:society rdf:type owl:Class; 
+    rdfs:subClassOf :agentive-social-object ;
+    rdfs:label "society"@IRI-based . 
 #  --------------------------- Class  34------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#state> rdf:type owl:Class; 
-                                                           rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#stative> ;
-                                                           rdfs:label "state"@IRI-based . 
+:state rdf:type owl:Class; 
+    rdfs:subClassOf :stative ;
+    rdfs:label "state"@IRI-based . 
 #  --------------------------- Class  35------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#shape-quality> rdf:type owl:Class; 
-                                                                   rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality> ;
-                                                                   rdfs:label "shape-quality"@IRI-based . 
+:shape-quality rdf:type owl:Class; 
+    rdfs:subClassOf :physical-quality ;
+    rdfs:label "shape-quality"@IRI-based . 
 #  --------------------------- Class  36------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#economic-process> rdf:type owl:Class; 
-                                                                      rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#phenomenon> ;
-                                                                      rdfs:label "economic-process"@IRI-based . 
+:economic-process rdf:type owl:Class; 
+    rdfs:subClassOf :phenomenon ;
+    rdfs:label "economic-process"@IRI-based . 
 #  --------------------------- Class  37------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#group> rdf:type owl:Class; 
-                                                           rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#society> ;
-                                                           rdfs:label "group"@IRI-based . 
+:group rdf:type owl:Class; 
+    rdfs:subClassOf :society ;
+    rdfs:label "group"@IRI-based . 
 #  --------------------------- Class  38------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quale> rdf:type owl:intersectionOf; 
-                                                           rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                             owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quale-of>;
-                                                                             owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality>
-                                                                           ];
-                                                           rdfs:label "quale"@IRI-based . 
+:quale rdf:type owl:intersectionOf; 
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :quale-of;
+    owl:allValuesFrom :quality
+    ];
+    rdfs:label "quale"@IRI-based . 
 #  --------------------------- Class  39------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#natural-person> rdf:type owl:Class; 
-                                                                    rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#agentive-physical-object> ;
-                                                                    rdfs:label "natural-person"@IRI-based . 
+:natural-person rdf:type owl:Class; 
+    rdfs:subClassOf :agentive-physical-object ;
+    rdfs:label "natural-person"@IRI-based . 
 #  --------------------------- Class  40------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#legally-constructed-person> rdf:type owl:Class; 
-                                                                                rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#socially-constructed-person> ;
-                                                                                rdfs:label "legally-constructed-person"@IRI-based . 
+:legally-constructed-person rdf:type owl:Class; 
+    rdfs:subClassOf :socially-constructed-person ;
+    rdfs:label "legally-constructed-person"@IRI-based . 
 #  --------------------------- Class  41------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#spatial-location-q> rdf:type owl:Class; 
-                                                                        rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality> ;
-                                                                        rdfs:label "spatial-location-q"@IRI-based . 
+:spatial-location-q rdf:type owl:Class; 
+    rdfs:subClassOf :physical-quality ;
+    rdfs:label "spatial-location-q"@IRI-based . 
 #  --------------------------- Class  42------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#country> rdf:type owl:Class; 
-                                                             rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#political-geographic-object> ;
-                                                             rdfs:label "country"@IRI-based . 
+:country rdf:type owl:Class; 
+    rdfs:subClassOf :political-geographic-object ;
+    rdfs:label "country"@IRI-based . 
 #  --------------------------- Class  43------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-agent> rdf:type owl:Class; 
-                                                                  rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#agentive-social-object> ;
-                                                                  rdfs:label "social-agent"@IRI-based . 
+:social-agent rdf:type owl:Class; 
+    rdfs:subClassOf :agentive-social-object ;
+    rdfs:label "social-agent"@IRI-based . 
 #  --------------------------- Class  44------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-physical-object> rdf:type owl:Class; 
-                                                                                  rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-object> ;
-                                                                                  rdfs:label "non-agentive-physical-object"@IRI-based . 
+:non-agentive-physical-object rdf:type owl:Class; 
+    rdfs:subClassOf :physical-object ;
+    rdfs:label "non-agentive-physical-object"@IRI-based . 
 #  --------------------------- Class  45------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mental-object> rdf:type owl:Class; 
-                                                                   rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-object> ;
-                                                                   rdfs:label "mental-object"@IRI-based . 
+:mental-object rdf:type owl:Class; 
+    rdfs:subClassOf :non-physical-object ;
+    rdfs:label "mental-object"@IRI-based . 
 #  --------------------------- Class  46------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region> rdf:type owl:Class; 
-                                                            rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract> ;
-                                                            rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                              owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location-of>;
-                                                                              owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality>
-                                                                            ];
-                                                            rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                              owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#generic-location-of>;
-                                                                              owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>
-                                                                            ];
-                                                            rdfs:label "region"@IRI-based . 
+:region rdf:type owl:Class; 
+    rdfs:subClassOf :abstract ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :q-location-of;
+    owl:allValuesFrom :quality
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :generic-location-of;
+    owl:allValuesFrom :particular
+    ];
+    rdfs:label "region"@IRI-based . 
 #  --------------------------- Class  47------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#phenomenon> rdf:type owl:Class; 
-                                                                rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#accomplishment> ;
-                                                                rdfs:label "phenomenon"@IRI-based . 
+:phenomenon rdf:type owl:Class; 
+    rdfs:subClassOf :accomplishment ;
+    rdfs:label "phenomenon"@IRI-based . 
 #  --------------------------- Class  48------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#agentive-social-object> rdf:type owl:Class; 
-                                                                            rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-object> ;
-                                                                            owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-social-object> ;
-                                                                            rdfs:label "agentive-social-object"@IRI-based . 
+:agentive-social-object rdf:type owl:Class; 
+    rdfs:subClassOf :social-object ;
+    owl:disjointWith :non-agentive-social-object ;
+    rdfs:label "agentive-social-object"@IRI-based . 
 #  --------------------------- Class  49------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract> rdf:type owl:Class; 
-                                                              rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> ;
-                                                              owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> ;
-                                                              rdfs:label "abstract"@IRI-based . 
+:abstract rdf:type owl:Class; 
+    rdfs:subClassOf :particular ;
+    owl:disjointWith :endurant ;
+    rdfs:label "abstract"@IRI-based . 
 #  --------------------------- Class  50------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#relevant-part> rdf:type owl:Class; 
-                                                                   rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#feature> ;
-                                                                   rdfs:label "relevant-part"@IRI-based . 
+:relevant-part rdf:type owl:Class; 
+    rdfs:subClassOf :feature ;
+    rdfs:label "relevant-part"@IRI-based . 
 #  --------------------------- Class  51------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant> rdf:type owl:Class; 
-                                                                       rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                         owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-depend-on-of>;
-                                                                                         owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant>
-                                                                                       ];
-                                                                       rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                         owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part>;
-                                                                                         owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant>
-                                                                                       ];
-                                                                       rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                         owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality>;
-                                                                                         owl:someValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality>
-                                                                                       ];
-                                                                       rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                         owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality>;
-                                                                                         owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality>
-                                                                                       ];
-                                                                       owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant> ;
-                                                                       rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> ;
-                                                                       rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                         owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-location>;
-                                                                                         owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region>
-                                                                                       ];
-                                                                       rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                         owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#spatial-location>;
-                                                                                         owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region>
-                                                                                       ];
-                                                                       rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                         owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constituted-by>;
-                                                                                         owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant>
-                                                                                       ];
-                                                                       rdfs:label "physical-endurant"@IRI-based . 
+:physical-endurant rdf:type owl:Class; 
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :physical-depend-on-of;
+    owl:allValuesFrom :non-physical-endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :part;
+    owl:allValuesFrom :physical-endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :has-quality;
+    owl:someValuesFrom :physical-quality
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :has-quality;
+    owl:allValuesFrom :physical-quality
+    ];
+    owl:disjointWith :non-physical-endurant ;
+    rdfs:subClassOf :endurant ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :physical-location;
+    owl:allValuesFrom :physical-region
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :spatial-location;
+    owl:allValuesFrom :space-region
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :constituted-by;
+    owl:allValuesFrom :physical-endurant
+    ];
+    rdfs:label "physical-endurant"@IRI-based . 
 #  --------------------------- Class  52------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#set> rdf:type owl:Class; 
-                                                         rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract> ;
-                                                         rdfs:label "set"@IRI-based . 
+:set rdf:type owl:Class; 
+    rdfs:subClassOf :abstract ;
+    rdfs:label "set"@IRI-based . 
 #  --------------------------- Class  53------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#event> rdf:type owl:Class; 
-                                                           rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant> ;
-                                                           rdfs:label "event"@IRI-based . 
+:event rdf:type owl:Class; 
+    rdfs:subClassOf :perdurant ;
+    rdfs:label "event"@IRI-based . 
 #  --------------------------- Class  54------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-role> rdf:type owl:Class; 
-                                                                 rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#socially-constructed-person> ;
-                                                                 rdfs:label "social-role"@IRI-based . 
+:social-role rdf:type owl:Class; 
+    rdfs:subClassOf :socially-constructed-person ;
+    rdfs:label "social-role"@IRI-based . 
 #  --------------------------- Class  55------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#organization> rdf:type owl:Class; 
-                                                                  rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#legally-constructed-person> ;
-                                                                  rdfs:label "organization"@IRI-based . 
+:organization rdf:type owl:Class; 
+    rdfs:subClassOf :legally-constructed-person ;
+    rdfs:label "organization"@IRI-based . 
 #  --------------------------- Class  56------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#fact> rdf:type owl:Class; 
-                                                          rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract> ;
-                                                          rdfs:label "fact"@IRI-based . 
+:fact rdf:type owl:Class; 
+    rdfs:subClassOf :abstract ;
+    rdfs:label "fact"@IRI-based . 
 #  --------------------------- Class  57------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-object> rdf:type owl:Class; 
-                                                                         rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant> ;
-                                                                         rdfs:label "non-physical-object"@IRI-based . 
+:non-physical-object rdf:type owl:Class; 
+    rdfs:subClassOf :non-physical-endurant ;
+    rdfs:label "non-physical-object"@IRI-based . 
 #  --------------------------- Class  58------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#accomplishment> rdf:type owl:Class; 
-                                                                    rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#event> ;
-                                                                    rdfs:label "accomplishment"@IRI-based . 
+:accomplishment rdf:type owl:Class; 
+    rdfs:subClassOf :event ;
+    rdfs:label "accomplishment"@IRI-based . 
 #  --------------------------- Class  59------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#artifact> rdf:type owl:Class; 
-                                                              rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-physical-object> ;
-                                                              rdfs:label "artifact"@IRI-based . 
+:artifact rdf:type owl:Class; 
+    rdfs:subClassOf :non-agentive-physical-object ;
+    rdfs:label "artifact"@IRI-based . 
 #  --------------------------- Class  60------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#instrumentality> rdf:type owl:Class; 
-                                                                     rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#artifact> ;
-                                                                     rdfs:label "instrumentality"@IRI-based . 
+:instrumentality rdf:type owl:Class; 
+    rdfs:subClassOf :artifact ;
+    rdfs:label "instrumentality"@IRI-based . 
 #  --------------------------- Class  61------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#vehicle> rdf:type owl:Class; 
-                                                             rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#conveyance> ;
-                                                             rdfs:label "vehicle"@IRI-based . 
+:vehicle rdf:type owl:Class; 
+    rdfs:subClassOf :conveyance ;
+    rdfs:label "vehicle"@IRI-based . 
 #  --------------------------- Class  62------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#conveyance> rdf:type owl:Class; 
-                                                                rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#instrumentality> ;
-                                                                rdfs:label "conveyance"@IRI-based . 
+:conveyance rdf:type owl:Class; 
+    rdfs:subClassOf :instrumentality ;
+    rdfs:label "conveyance"@IRI-based . 
 #  --------------------------- Class  63------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#political-geographic-object> rdf:type owl:Class; 
-                                                                                 rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-place> ;
-                                                                                 rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                                   owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physically-depends-on>;
-                                                                                                   owl:someValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#geographical-object>
-                                                                                                 ];
-                                                                                 rdfs:label "political-geographic-object"@IRI-based . 
+:political-geographic-object rdf:type owl:Class; 
+    rdfs:subClassOf :non-physical-place ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :physically-depends-on;
+    owl:someValuesFrom :geographical-object
+    ];
+    rdfs:label "political-geographic-object"@IRI-based . 
 #  --------------------------- Class  64------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#biological-object> rdf:type owl:Class; 
-                                                                       rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-physical-object> ;
-                                                                       rdfs:label "biological-object"@IRI-based . 
+:biological-object rdf:type owl:Class; 
+    rdfs:subClassOf :non-agentive-physical-object ;
+    rdfs:label "biological-object"@IRI-based . 
 #  --------------------------- Class  65------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> rdf:type owl:Class; 
-                                                              rdfs:comment "
- the main characteristic of endurants is that all of them are independent essential wholes. 
-" ;
-                                                              rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> ;
-                                                              rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depend-on-of>;
-                                                                                owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>
-                                                                              ];
-                                                              rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant-in>;
-                                                                                owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant>
-                                                                              ];
-                                                              rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constituted-by>;
-                                                                                owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>
-                                                                              ];
-                                                              rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depends-on>;
-                                                                                owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>
-                                                                              ];
-                                                              rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-part>;
-                                                                                owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>
-                                                                              ];
-                                                              rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-proper-part>;
-                                                                                owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>
-                                                                              ];
-                                                              rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-proper-part-of>;
-                                                                                owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>
-                                                                              ];
-                                                              rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#descriptively-depends-on>;
-                                                                                owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant>
-                                                                              ];
-                                                              rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#present-at>;
-                                                                                owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval>
-                                                                              ];
-                                                              rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#e-temporal-location>;
-                                                                                owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region>
-                                                                              ];
-                                                              rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-part-of>;
-                                                                                owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant>
-                                                                              ];
-                                                              rdfs:label "endurant"@IRI-based . 
+:endurant rdf:type owl:Class; 
+    rdfs:comment "the main characteristic of endurants is that all of them are independent essential wholes." ;
+    rdfs:subClassOf :particular ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :depend-on-of;
+    owl:allValuesFrom :endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :participant-in;
+    owl:allValuesFrom :perdurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :constituted-by;
+    owl:allValuesFrom :endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :depends-on;
+    owl:allValuesFrom :endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :temporary-part;
+    owl:allValuesFrom :endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :temporary-proper-part;
+    owl:allValuesFrom :endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :temporary-proper-part-of;
+    owl:allValuesFrom :endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :descriptively-depends-on;
+    owl:allValuesFrom :non-physical-endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :present-at;
+    owl:allValuesFrom :time-interval
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :e-temporal-location;
+    owl:allValuesFrom :temporal-region
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :temporary-part-of;
+    owl:allValuesFrom :endurant
+    ];
+    rdfs:label "endurant"@IRI-based . 
 #  --------------------------- Class  66------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-quality> rdf:type owl:Class; 
-                                                                      owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality> ;
-                                                                      owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-quality> ;
-                                                                      rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                        owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location>;
-                                                                                        owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region>
-                                                                                      ];
-                                                                      rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                        owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in>;
-                                                                                        owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant>
-                                                                                      ];
-                                                                      rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                        owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in>;
-                                                                                        owl:someValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant>
-                                                                                      ];
-                                                                      rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                        owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality>;
-                                                                                        owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-quality>
-                                                                                      ];
-                                                                      rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality> ;
-                                                                      rdfs:label "temporal-quality"@IRI-based . 
+:temporal-quality rdf:type owl:Class; 
+    owl:disjointWith :physical-quality ;
+    owl:disjointWith :abstract-quality ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :q-location;
+    owl:allValuesFrom :temporal-region
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :inherent-in;
+    owl:allValuesFrom :perdurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :inherent-in;
+    owl:someValuesFrom :perdurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :has-quality;
+    owl:allValuesFrom :temporal-quality
+    ];
+    rdfs:subClassOf :quality ;
+    rdfs:label "temporal-quality"@IRI-based . 
 #  --------------------------- Class  67------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#amount-of-matter> rdf:type owl:Class; 
-                                                                      rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant> ;
-                                                                      rdfs:label "amount-of-matter"@IRI-based . 
+:amount-of-matter rdf:type owl:Class; 
+    rdfs:subClassOf :physical-endurant ;
+    rdfs:label "amount-of-matter"@IRI-based . 
 #  --------------------------- Class  68------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#spatio-temporal-region> rdf:type owl:Class; 
-                                                                            rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region> ;
-                                                                            rdfs:label "spatio-temporal-region"@IRI-based . 
+:spatio-temporal-region rdf:type owl:Class; 
+    rdfs:subClassOf :space-region ;
+    rdfs:label "spatio-temporal-region"@IRI-based . 
 #  --------------------------- Class  69------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality> rdf:type owl:Class; 
-                                                             rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular> ;
-                                                             rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                               owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location>;
-                                                                               owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region>
-                                                                             ];
-                                                             rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                               owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in>;
-                                                                               owl:someValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>
-                                                                             ];
-                                                             rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                               owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in>;
-                                                                               owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular>
-                                                                             ];
-                                                             owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant> ;
-                                                             rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                               owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality>;
-                                                                               owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality>
-                                                                             ];
-                                                             owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> ;
-                                                             rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                               owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quale>;
-                                                                               owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quale>
-                                                                             ];
-                                                             owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract> ;
-                                                             rdfs:label "quality"@IRI-based . 
+:quality rdf:type owl:Class; 
+    rdfs:subClassOf :particular ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :q-location;
+    owl:allValuesFrom :region
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :inherent-in;
+    owl:someValuesFrom :particular
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :inherent-in;
+    owl:allValuesFrom :particular
+    ];
+    owl:disjointWith :perdurant ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :has-quality;
+    owl:allValuesFrom :quality
+    ];
+    owl:disjointWith :endurant ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :has-quale;
+    owl:allValuesFrom :quale
+    ];
+    owl:disjointWith :abstract ;
+    rdfs:label "quality"@IRI-based . 
 #  --------------------------- Class  70------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#geographical-object> rdf:type owl:Class; 
-                                                                         rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-place> ;
-                                                                         rdfs:label "geographical-object"@IRI-based . 
+:geographical-object rdf:type owl:Class; 
+    rdfs:subClassOf :physical-place ;
+    rdfs:label "geographical-object"@IRI-based . 
 #  --------------------------- Class  71------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#unitary-collection> rdf:type owl:Class; 
-                                                                        rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-physical-object> ;
-                                                                        rdfs:label "unitary-collection"@IRI-based . 
+:unitary-collection rdf:type owl:Class; 
+    rdfs:subClassOf :non-agentive-physical-object ;
+    rdfs:label "unitary-collection"@IRI-based . 
 #  --------------------------- Class  72------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#biological-process> rdf:type owl:Class; 
-                                                                        rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#phenomenon> ;
-                                                                        rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                          owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant>;
-                                                                                          owl:someValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#biological-object>
-                                                                                        ];
-                                                                        rdfs:label "biological-process"@IRI-based . 
+:biological-process rdf:type owl:Class; 
+    rdfs:subClassOf :phenomenon ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :participant;
+    owl:someValuesFrom :biological-object
+    ];
+    rdfs:label "biological-process"@IRI-based . 
 #  --------------------------- Class  73------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#process> rdf:type owl:Class; 
-                                                             rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#stative> ;
-                                                             rdfs:label "process"@IRI-based . 
+:process rdf:type owl:Class; 
+    rdfs:subClassOf :stative ;
+    rdfs:label "process"@IRI-based . 
 #  --------------------------- Class  74------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#arbitrary-sum> rdf:type owl:Class; 
-                                                                   rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant> ;
-                                                                   owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant> ;
-                                                                   owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant> ;
-                                                                   rdfs:label "arbitrary-sum"@IRI-based . 
+:arbitrary-sum rdf:type owl:Class; 
+    rdfs:subClassOf :endurant ;
+    owl:disjointWith :non-physical-endurant ;
+    owl:disjointWith :physical-endurant ;
+    rdfs:label "arbitrary-sum"@IRI-based . 
 #  --------------------------- Class  75------------------------- 
-<http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality> rdf:type owl:Class; 
-                                                                      rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                        owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-present-at>;
-                                                                                        owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval>
-                                                                                      ];
-                                                                      owl:disjointWith <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-quality> ;
-                                                                      rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                        owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality>;
-                                                                                        owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality>
-                                                                                      ];
-                                                                      rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                        owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in>;
-                                                                                        owl:someValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant>
-                                                                                      ];
-                                                                      rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                        owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location>;
-                                                                                        owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region>
-                                                                                      ];
-                                                                      rdfs:subClassOf [ rdf:type owl:Restriction ; 
-                                                                                        owl:onProperty <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in>;
-                                                                                        owl:allValuesFrom <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant>
-                                                                                      ];
-                                                                      rdfs:subClassOf <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality> ;
-                                                                      rdfs:label "physical-quality"@IRI-based . 
+:physical-quality rdf:type owl:Class; 
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :q-present-at;
+    owl:allValuesFrom :time-interval
+    ];
+    owl:disjointWith :abstract-quality ;
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :has-quality;
+    owl:allValuesFrom :physical-quality
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :inherent-in;
+    owl:someValuesFrom :physical-endurant
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :q-location;
+    owl:allValuesFrom :physical-region
+    ];
+    rdfs:subClassOf [ rdf:type owl:Restriction ; 
+    owl:onProperty :inherent-in;
+    owl:allValuesFrom :physical-endurant
+    ];
+    rdfs:subClassOf :quality ;
+    rdfs:label "physical-quality"@IRI-based . 
