@@ -1,0 +1,1837 @@
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<owl:Ontology rdf:about=""/>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#activity">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#accomplishment"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#organization">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#legally-constructed-person"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#equipment">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#instrumentality"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-agent">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#agentive-social-object"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#spatio-temporal-region">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#date">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#fact">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#achievement">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#event"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#artifact">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-physical-object"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#agentive-social-object">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-object"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location-q">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-quality"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#relevant-part">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#feature"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#transaction">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#activity"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#feature">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#host"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-role">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#socially-constructed-person"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-unit">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-agent"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#instrumentality">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#artifact"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#political-geographic-object">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-place"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physically-depends-on"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#geographical-object"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#socially-constructed-person">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-agent"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#color-quality">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#commerce">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#transaction"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-location"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-region"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depends-on-spatial-location"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physically-depends-on"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#descriptive-depend-on-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-quality"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#e-temporal-location-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#construction">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#artifact"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#amount-of-matter">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#spatial-location-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#p-spatial-location-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depend-on-spatial-location-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#process">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#stative"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#geographical-object">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-place"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#event">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#group">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#society"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quale">
+<owl:equivalentClass>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#proper-part"/>
+<owl:allValuesFrom>
+<owl:Class>
+<owl:complementOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region"/>
+</owl:complementOf>
+</owl:Class>
+</owl:allValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:equivalentClass>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#state">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#stative"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#set">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#conveyance">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#instrumentality"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-physical-object">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-object"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-social-object">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-object"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-object">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#spatial-location-q">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-quality">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-region"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-quality"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#vehicle">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#conveyance"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#dependent-place">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#feature"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-quality">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-quality"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#legally-constructed-person">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#socially-constructed-person"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-present-at"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#phenomenon">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#accomplishment"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quale"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quale"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-region">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-location-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-region"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-location"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#spatial-location"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-depend-on-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constituted-by"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#accomplishment">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#event"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#country">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#political-geographic-object"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#device">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#instrumentality"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#organism">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#biological-object"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-of-presence-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-of-q-presence-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-of-happening-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#information-object">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-social-object"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physically-depends-on"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#biological-object">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-physical-object"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#arbitrary-sum">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#agentive-physical-object">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-object"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#generic-location-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#economic-process">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#phenomenon"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality"/>
+<owl:allValuesFrom>
+<owl:Class>
+<owl:complementOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#spatial-location-q"/>
+</owl:complementOf>
+</owl:Class>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant">
+<rdfs:comment>
+<![CDATA[ the main characteristic of endurants is that all of them are independent essential wholes. ]]>
+</rdfs:comment>
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-part"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-part-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-proper-part"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-proper-part-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant-in"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#e-temporal-location"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#present-at"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depends-on"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depend-on-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#descriptively-depends-on"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant-in"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constituted-by"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#volume">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-object">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-object"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mental-object">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-object"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-place">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-social-object"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physically-depends-on"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-place"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#unitary-collection">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-physical-object"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-place">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-physical-object"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#p-spatial-location"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#happens-at"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location-q"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-quality"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constituted-by"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#biological-process">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#phenomenon"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#biological-object"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#natural-person">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#agentive-physical-object"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#society">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#agentive-social-object"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular">
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#conceptual-relation"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#host-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#feature"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#generic-location"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-object">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region"/>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-location-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#shape-quality">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#stative">
+<rdfs:subClassOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#proper-part">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#generic-location">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mediated-relation"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#generic-location-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#generic-location"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mediated-relation">
+<rdfs:comment>
+<![CDATA[ relations are mediated when they embed other relations holding for 'hidden' arguments. for example, overlaps is the composition of part and part-of relations, with a hidden common part argument. ]]>
+</rdfs:comment>
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#conceptual-relation"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#host">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#immediate-relation"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#feature"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#immediate-relation"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depends-on-spatial-location">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#proper-part-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#proper-part"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-member">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constituted-by"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physically-depends-on">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depends-on"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quale-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quale"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#member-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-member"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant-in">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#immediate-relation">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#conceptual-relation"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#immediate-relation"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#descriptively-depends-on">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depends-on"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constitutes">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constituted-by"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#immediate-relation"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#present-at">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#e-temporal-location"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-depend-on-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physically-depends-on"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-location-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-location"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#total-participant-in">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#total-participant"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#sibling-part">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#sibling-part"/>
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mediated-relation"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#spatial-location-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#spatial-location"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-total-participant">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#partly-compresent">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#partly-compresent"/>
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mediated-relation"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-component-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-component"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#component">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#proper-part"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quale">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quale"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#descriptive-depend-on-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#descriptively-depends-on"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depend-on-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depends-on"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-total-participant-in">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-total-participant"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-location">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-region"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#overlaps">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#overlaps"/>
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mediated-relation"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#p-spatial-location">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-of-q-presence-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-present-at"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#duration-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#duration"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constant-participant-in">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constant-participant"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-location-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-location"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constituted-by">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#immediate-relation"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#e-temporal-location-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#e-temporal-location"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#conceptual-relation">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#conceptual-relation"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#spatial-location">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-location"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#space-region"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#component-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#component"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-location">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-part">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#happens-at">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-present-at">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mediated-relation"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-of-presence-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#present-at"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#host-of"/>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-of-happening-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#happens-at"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#generic-location"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality">
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-proper-part-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-proper-part"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#total-participant">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-component">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#component"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-part-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-part"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#p-spatial-location-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#p-spatial-location"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#e-temporal-location">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#participant">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#immediate-relation"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depend-on-spatial-location-of">
+<owl:inverseOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depends-on-spatial-location"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#duration">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-location"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#depends-on">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mediated-relation"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#constant-participant">
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-proper-part">
+<rdfs:subPropertyOf rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#proper-part"/>
+<rdfs:domain>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:domain>
+<rdfs:range>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quale">
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quale-of"/>
+<owl:allValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+</owl:allValuesFrom>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporary-part"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+<rdfs:subClassOf>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#partly-compresent"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#generic-location"/>
+<owl:someValuesFrom>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+<owl:Class>
+<owl:complementOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region"/>
+</owl:complementOf>
+</owl:Class>
+</owl:intersectionOf>
+</owl:Class>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+<owl:equivalentClass>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality"/>
+<owl:someValuesFrom>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location"/>
+<owl:someValuesFrom>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#conceptual-relation"/>
+<owl:someValuesFrom>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location-of"/>
+<owl:someValuesFrom>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#inherent-in"/>
+<owl:someValuesFrom>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+<owl:Class>
+<owl:complementOf>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region"/>
+</owl:complementOf>
+</owl:Class>
+</owl:intersectionOf>
+</owl:Class>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:equivalentClass>
+</owl:Class>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#exact-location"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+<owl:equivalentClass>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#has-quality"/>
+<owl:someValuesFrom>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#q-location"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#region"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:equivalentClass>
+</owl:Class>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#overlaps"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+<owl:equivalentClass>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part"/>
+<owl:someValuesFrom>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part-of"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:equivalentClass>
+</owl:Class>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#partly-compresent"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+<owl:equivalentClass>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#present-at"/>
+<owl:someValuesFrom>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-interval"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#time-of-presence-of"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:equivalentClass>
+</owl:Class>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#sibling-part"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+<owl:equivalentClass>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part-of"/>
+<owl:someValuesFrom>
+<owl:Class>
+<owl:intersectionOf rdf:parseType="Collection">
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+<owl:Restriction>
+<owl:onProperty rdf:resource="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#part"/>
+<owl:someValuesFrom>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#particular"/>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:someValuesFrom>
+</owl:Restriction>
+</owl:intersectionOf>
+</owl:Class>
+</owl:equivalentClass>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#endurant">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#perdurant">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#quality"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#arbitrary-sum">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#arbitrary-sum">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#mental-object">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#social-object"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#amount-of-matter">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-object"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-quality">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-quality"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-quality">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-quality">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-quality"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-region"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#temporal-region">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#abstract-region">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-region"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-physical-endurant">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#physical-endurant"/>
+</owl:disjointWith>
+</owl:Class>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#agentive-social-object">
+<owl:disjointWith>
+<owl:Class rdf:about="http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#non-agentive-social-object"/>
+</owl:disjointWith>
+</owl:Class>
+</rdf:RDF>
